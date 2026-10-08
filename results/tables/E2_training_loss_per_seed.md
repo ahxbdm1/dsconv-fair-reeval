@@ -1,0 +1,12 @@
+| implementation   |   seed | source                                                 |   final_epoch_loss |   last50_mean_loss |   last200_mean_loss |   validation_selected_epoch |   loss_at_selected_epoch |
+|:-----------------|-------:|:-------------------------------------------------------|-------------------:|-------------------:|--------------------:|----------------------------:|-------------------------:|
+| orig             |      0 | runs/drive_dscnet_none_orig_b8_lr0.001_s0/epochs.jsonl |          0.0932001 |          0.0984263 |           0.105305  |                         221 |                0.108622  |
+| orig             |      1 | runs/drive_dscnet_none_orig_b8_lr0.001_s1/epochs.jsonl |          0.0911417 |          0.0961894 |           0.103913  |                         236 |                0.110159  |
+| orig             |      2 | runs/drive_dscnet_none_orig_b8_lr0.001_s2/epochs.jsonl |          0.10137   |          0.104744  |           0.111659  |                         261 |                0.112347  |
+| orig             |      3 | runs/drive_dscnet_none_orig_b8_lr0.001_s3/epochs.jsonl |          0.0928919 |          0.0927269 |           0.0999573 |                         241 |                0.110167  |
+| orig             |      4 | runs/drive_dscnet_none_orig_b8_lr0.001_s4/epochs.jsonl |          0.0910408 |          0.091429  |           0.0984514 |                         206 |                0.113839  |
+| fix              |      0 | runs/drive_dscnet_none_fix_b8_lr0.001_s0/epochs.jsonl  |          0.0702893 |          0.0755304 |           0.0812152 |                         221 |                0.084185  |
+| fix              |      1 | runs/drive_dscnet_none_fix_b8_lr0.001_s1/epochs.jsonl  |          0.0692988 |          0.0735263 |           0.0802152 |                         251 |                0.0864828 |
+| fix              |      2 | runs/drive_dscnet_none_fix_b8_lr0.001_s2/epochs.jsonl  |          0.0703344 |          0.0720137 |           0.0784981 |                         336 |                0.0722609 |
+| fix              |      3 | runs/drive_dscnet_none_fix_b8_lr0.001_s3/epochs.jsonl  |          0.0736396 |          0.073422  |           0.0791009 |                         316 |                0.0767282 |
+| fix              |      4 | runs/drive_dscnet_none_fix_b8_lr0.001_s4/epochs.jsonl  |          0.0756587 |          0.0760731 |           0.0826197 |                         201 |                0.100848  |

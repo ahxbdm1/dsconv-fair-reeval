@@ -1,0 +1,19 @@
+| dataset   | variant   | kind   | dsconv   |   batch |     lr |     mean_pp |   sample_sd_pp |      max_pp |   runs |
+|:----------|:----------|:-------|:---------|--------:|-------:|------------:|---------------:|------------:|-------:|
+| chase     | dscnet    | conv   | orig     |       1 | 0.0002 | 0.299338    |      0.248522  | 0.630265    |      5 |
+| chase     | dscnet    | mamba  | orig     |       1 | 0.0002 | 0.371983    |      0.262529  | 0.674081    |      5 |
+| chase     | dscnet    | none   | orig     |       1 | 5e-05  | 0.40527     |    nan         | 0.40527     |      1 |
+| chase     | dscnet    | none   | orig     |       1 | 0.0001 | 0.385982    |      0.260925  | 0.728035    |      5 |
+| chase     | dscnet    | none   | orig     |       1 | 0.0002 | 0.213994    |      0.254293  | 0.512594    |      5 |
+| chase     | dscnet    | trop   | orig     |       1 | 0.0002 | 0.3608      |      0.224159  | 0.593376    |      5 |
+| chase     | unet      | none   | orig     |       1 | 5e-05  | 0.367159    |    nan         | 0.367159    |      1 |
+| chase     | unet      | none   | orig     |       1 | 0.0001 | 0.533915    |    nan         | 0.533915    |      1 |
+| chase     | unet      | none   | orig     |       1 | 0.0002 | 0.341266    |      0.296407  | 0.748241    |      5 |
+| drive     | dscnet    | none   | fix      |       8 | 0.0002 | 0           |    nan         | 0           |      1 |
+| drive     | dscnet    | none   | fix      |       8 | 0.0005 | 0.000721216 |    nan         | 0.000721216 |      1 |
+| drive     | dscnet    | none   | fix      |       8 | 0.001  | 0.0731146   |      0.0833154 | 0.202936    |      5 |
+| drive     | dscnet    | none   | orig     |       1 | 0.0001 | 0.116825    |      0.101663  | 0.185204    |      3 |
+| drive     | dscnet    | none   | orig     |       8 | 0.001  | 0.0471258   |      0.0673453 | 0.145066    |      5 |
+| drive     | unet      | none   | orig     |       1 | 5e-05  | 0.054574    |    nan         | 0.054574    |      1 |
+| drive     | unet      | none   | orig     |       1 | 0.0001 | 0.110167    |    nan         | 0.110167    |      1 |
+| drive     | unet      | none   | orig     |       1 | 0.0002 | 0.0884283   |      0.100536  | 0.232673    |      5 |

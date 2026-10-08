@@ -1,0 +1,6 @@
+| study_role        | run                                          | dataset   | variant   | kind   | dsconv   |   batch |     lr |   seed |   optimistic_test_epoch |   validation_selected_epoch |   inflation_pp |
+|:------------------|:---------------------------------------------|:----------|:----------|:-------|:---------|--------:|-------:|-------:|------------------------:|----------------------------:|---------------:|
+| posthoc_lr        | runs/drive_dscnet_none_fix_b8_lr0.002_s0     | drive     | dscnet    | none   | fix      |       8 | 0.002  |      0 |                     221 |                         221 |       0        |
+| posthoc_lr        | runs/drive_dscnet_none_orig_b8_lr0.0005_s0   | drive     | dscnet    | none   | orig     |       8 | 0.0005 |      0 |                     206 |                         221 |       0.329036 |
+| mechanism_posthoc | runs/drive_dscnet_none_shuffle_b8_lr0.001_s0 | drive     | dscnet    | none   | shuffle  |       8 | 0.001  |      0 |                     246 |                         246 |       0        |
+| mechanism_posthoc | runs/drive_dscnet_none_shuffle_b8_lr0.001_s1 | drive     | dscnet    | none   | shuffle  |       8 | 0.001  |      1 |                     261 |                         231 |       0.166607 |

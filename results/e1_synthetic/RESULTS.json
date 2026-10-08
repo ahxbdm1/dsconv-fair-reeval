@@ -1,0 +1,329 @@
+{
+  "complete": true,
+  "records": 1240,
+  "plan": {
+    "owner": "Codex",
+    "torch": "2.8.0+cpu",
+    "source_sha256": "141871d6f7c07fc24b43b1528758a164799b31ebc291d2a339199eaee97a413d",
+    "upstream_commit": "0e35b2b6ea748a5e8ce7557ea3e580b9951471d6",
+    "batches": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "shape_per_sample": [
+      8,
+      40,
+      36
+    ],
+    "out_channels": 16,
+    "kernel_size": 9,
+    "morphs": [
+      0,
+      1
+    ],
+    "model_mode": "eval; random weights, frozen BatchNorm statistics",
+    "input": "independent standard normal synthetic feature maps",
+    "relative_error": "L2(original_batch - singleton_reference) / L2(singleton_reference), per sample, then batch mean",
+    "controls": [
+      "fixed same weights",
+      "identical inputs in every batch slot",
+      "batch permutation",
+      "fixed-coordinate gather-path gradient"
+    ],
+    "scientific_scope": "operator mechanism characterization, not dataset prevalence or trained-model performance"
+  },
+  "batch_summary": [
+    {
+      "morph": 0,
+      "batch": 1,
+      "n_seeds": 20,
+      "original_batch_mean_relative_l2": 0.0,
+      "original_between_seed_sd": 0.0,
+      "original_nonfirst_relative_l2": 0.0,
+      "fixed_batch_mean_relative_l2": 0.0,
+      "fixed_between_seed_sd": 0.0
+    },
+    {
+      "morph": 0,
+      "batch": 2,
+      "n_seeds": 20,
+      "original_batch_mean_relative_l2": 0.5809133966982003,
+      "original_between_seed_sd": 0.002953395072701527,
+      "original_nonfirst_relative_l2": 1.1618262231349945,
+      "fixed_batch_mean_relative_l2": 5.744097038018481e-07,
+      "fixed_between_seed_sd": 2.2652866711275607e-08
+    },
+    {
+      "morph": 0,
+      "batch": 4,
+      "n_seeds": 20,
+      "original_batch_mean_relative_l2": 0.8705240519687983,
+      "original_between_seed_sd": 0.0025794153224941124,
+      "original_nonfirst_relative_l2": 1.160698542992274,
+      "fixed_batch_mean_relative_l2": 5.8986109934267e-07,
+      "fixed_between_seed_sd": 1.6895261292327422e-08
+    },
+    {
+      "morph": 0,
+      "batch": 8,
+      "n_seeds": 20,
+      "original_batch_mean_relative_l2": 1.0158277452908682,
+      "original_between_seed_sd": 0.001627480213044989,
+      "original_nonfirst_relative_l2": 1.1609459119183676,
+      "fixed_batch_mean_relative_l2": 5.892205972912734e-07,
+      "fixed_between_seed_sd": 1.2270039754379842e-08
+    },
+    {
+      "morph": 0,
+      "batch": 16,
+      "n_seeds": 20,
+      "original_batch_mean_relative_l2": 1.087968242214259,
+      "original_between_seed_sd": 0.0017651078041203533,
+      "original_nonfirst_relative_l2": 1.1604994197686513,
+      "fixed_batch_mean_relative_l2": 5.885549153816782e-07,
+      "fixed_between_seed_sd": 9.187608028348305e-09
+    },
+    {
+      "morph": 1,
+      "batch": 1,
+      "n_seeds": 20,
+      "original_batch_mean_relative_l2": 0.0,
+      "original_between_seed_sd": 0.0,
+      "original_nonfirst_relative_l2": 0.0,
+      "fixed_batch_mean_relative_l2": 0.0,
+      "fixed_between_seed_sd": 0.0
+    },
+    {
+      "morph": 1,
+      "batch": 2,
+      "n_seeds": 20,
+      "original_batch_mean_relative_l2": 0.5797336911080933,
+      "original_between_seed_sd": 0.004115772397195126,
+      "original_nonfirst_relative_l2": 1.1594668447971344,
+      "fixed_batch_mean_relative_l2": 5.344821801145371e-07,
+      "fixed_between_seed_sd": 1.6951031441666286e-08
+    },
+    {
+      "morph": 1,
+      "batch": 4,
+      "n_seeds": 20,
+      "original_batch_mean_relative_l2": 0.8697547082907107,
+      "original_between_seed_sd": 0.0033099669935552503,
+      "original_nonfirst_relative_l2": 1.1596727609634399,
+      "fixed_batch_mean_relative_l2": 5.558404232886005e-07,
+      "fixed_between_seed_sd": 1.2322017831564726e-08
+    },
+    {
+      "morph": 1,
+      "batch": 8,
+      "n_seeds": 20,
+      "original_batch_mean_relative_l2": 1.0158841873112394,
+      "original_between_seed_sd": 0.003105990608147758,
+      "original_nonfirst_relative_l2": 1.1610104211739132,
+      "fixed_batch_mean_relative_l2": 5.523134962714948e-07,
+      "fixed_between_seed_sd": 9.402996975347725e-09
+    },
+    {
+      "morph": 1,
+      "batch": 16,
+      "n_seeds": 20,
+      "original_batch_mean_relative_l2": 1.0883149595262147,
+      "original_between_seed_sd": 0.0032875010565339333,
+      "original_nonfirst_relative_l2": 1.1608692534764606,
+      "fixed_batch_mean_relative_l2": 5.531207807329963e-07,
+      "fixed_between_seed_sd": 8.33553986019882e-09
+    }
+  ],
+  "gradient_rows": [
+    {
+      "morph": 0,
+      "implementation": "original",
+      "loss_sample": 1,
+      "input_sample": 0,
+      "gradient_l2": 0.13909971714019775
+    },
+    {
+      "morph": 0,
+      "implementation": "original",
+      "loss_sample": 1,
+      "input_sample": 1,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 0,
+      "implementation": "original",
+      "loss_sample": 1,
+      "input_sample": 2,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 0,
+      "implementation": "original",
+      "loss_sample": 1,
+      "input_sample": 3,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 0,
+      "implementation": "fixed",
+      "loss_sample": 1,
+      "input_sample": 0,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 0,
+      "implementation": "fixed",
+      "loss_sample": 1,
+      "input_sample": 1,
+      "gradient_l2": 0.14549259841442108
+    },
+    {
+      "morph": 0,
+      "implementation": "fixed",
+      "loss_sample": 1,
+      "input_sample": 2,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 0,
+      "implementation": "fixed",
+      "loss_sample": 1,
+      "input_sample": 3,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 1,
+      "implementation": "original",
+      "loss_sample": 1,
+      "input_sample": 0,
+      "gradient_l2": 0.14206373691558838
+    },
+    {
+      "morph": 1,
+      "implementation": "original",
+      "loss_sample": 1,
+      "input_sample": 1,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 1,
+      "implementation": "original",
+      "loss_sample": 1,
+      "input_sample": 2,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 1,
+      "implementation": "original",
+      "loss_sample": 1,
+      "input_sample": 3,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 1,
+      "implementation": "fixed",
+      "loss_sample": 1,
+      "input_sample": 0,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 1,
+      "implementation": "fixed",
+      "loss_sample": 1,
+      "input_sample": 1,
+      "gradient_l2": 0.1388683021068573
+    },
+    {
+      "morph": 1,
+      "implementation": "fixed",
+      "loss_sample": 1,
+      "input_sample": 2,
+      "gradient_l2": 0.0
+    },
+    {
+      "morph": 1,
+      "implementation": "fixed",
+      "loss_sample": 1,
+      "input_sample": 3,
+      "gradient_l2": 0.0
+    }
+  ],
+  "constant_feature_example": {
+    "morph0_original": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "morph0_fixed": [
+      1.0,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "morph1_original": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "morph1_fixed": [
+      1.0,
+      2.0,
+      3.0,
+      4.0
+    ]
+  },
+  "max_fixed_batch_dependence": 1.2636184692382812e-05,
+  "max_original_permutation_error": 5.1380486488342285,
+  "max_fixed_permutation_error": 0.0,
+  "max_identical_input_error": 1.2636184692382812e-05,
+  "batch1_bitwise_identity": true,
+  "upstream_lines": {
+    "batch_base": [
+      289,
+      290
+    ],
+    "cancellation": [
+      293,
+      294,
+      297,
+      298
+    ]
+  },
+  "completed_epoch": 1791383263.5831907,
+  "public_source_provenance": {
+    "repository": "YaoleiQi/DSCNet",
+    "commit": "0e35b2b6ea748a5e8ce7557ea3e580b9951471d6",
+    "path": "DSCNet_2D_opensource/Code/DRIVE/DSCNet/S3_DSConv.py",
+    "public_sha256": "141871d6f7c07fc24b43b1528758a164799b31ebc291d2a339199eaee97a413d",
+    "git_blob_sha": "4c0a0fc46fbd5e9f49f63b8ec7cc080eb13f1a6d",
+    "normalized_text_matches_stage2_source": true,
+    "note": "Line-number metadata corrected by source enumeration; all numeric records and original pre-execution plan retained. A null stage2 comparison means its separate archive was not available in this checkout."
+  }
+}

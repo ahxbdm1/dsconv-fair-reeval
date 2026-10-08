@@ -1,0 +1,6 @@
+{
+  "roi": 96,
+  "bsz": 8,
+  "max_abs_diff_full_vs_pairs": 1.3709068298339844e-06,
+  "max_abs_diff_full_vs_single": 0.9986303448677063
+}

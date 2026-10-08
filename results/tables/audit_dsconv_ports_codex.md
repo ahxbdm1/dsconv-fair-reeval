@@ -1,0 +1,13 @@
+|repository|classification|validation|evidence_ids|
+|---|---|---|---|
+|KK-ship-it-glitch/Dynamic-Snake-Convolution-Module|specific_cancellation_absent_batched_grid_path|static_only|E059|
+|KevinYu17/DSCformer|specific_cancellation_absent_batched_grid_path|static_only|E060|
+|gikibot/MSure-YOLO|specific_cancellation_absent_batched_grid_path|static_only|E061|
+|sudheerpunuriB/tod-yolo|specific_cancellation_absent_batched_grid_path|static_only|E062|
+|cuiruize/TopoNet|specific_cancellation_absent_batched_grid_path|static_only|E063|
+|ShellRedia/Snake-SWin-OCTA|specific_cancellation_absent_batched_grid_path|static_only|E064|
+|Ath0r/DSC-AMP|specific_cancellation_absent_batched_grid_path|static_only|E065|
+|jryxxx/YOLOv8|sample_offset_cancellation_confirmed|CPU_reproduced_constant_inputs_and_fixed_coordinate_gradient_B1_B4_both_morphs|E066|
+|stevezs315/AttUKAN|sample_offset_cancellation_confirmed|CPU_reproduced_constant_inputs_and_fixed_coordinate_gradient_B1_B4_both_morphs|E067|
+|frank-oy/HREFNet|sample_offset_cancellation_confirmed|CPU_reproduced_constant_inputs_and_fixed_coordinate_gradient_B1_B4_both_morphs|E068|
+|Chriz122/ultralytics_pro|sample_offset_cancellation_confirmed|CPU_reproduced_constant_inputs_and_fixed_coordinate_gradient_B1_B4_both_morphs|E069|

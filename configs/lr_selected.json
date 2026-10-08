@@ -1,0 +1,6 @@
+{
+  "drive_unet": 0.0002,
+  "chase_unet": 0.0002,
+  "E2": 0.001,
+  "chase_dscnet": 0.0002
+}

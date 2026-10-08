@@ -1,0 +1,2369 @@
+{
+  "protocol_version": "CODEX_STAGE4 v2 2026-10-06",
+  "groups": {
+    "drive": {
+      "dscnet": {
+        "summary": {
+          "dice": {
+            "mean": 0.8165636513073803,
+            "sample_sd": 0.0006907226419552409
+          },
+          "cldice": {
+            "mean": 0.8189724199151607,
+            "sample_sd": 0.003378981824675275
+          },
+          "betti0_err": {
+            "mean": 84.77,
+            "sample_sd": 4.332522360011544
+          },
+          "betti1_err": {
+            "mean": 29.51,
+            "sample_sd": 1.8799601059596989
+          },
+          "patch_betti0_err": {
+            "mean": 1.1800000000000002,
+            "sample_sd": 0.054089599733984986
+          },
+          "patch_betti1_err": {
+            "mean": 0.3173611111111111,
+            "sample_sd": 0.004527223892501849
+          }
+        },
+        "source_files": [
+          "runs/reused/clean_none_b3_lr0.0002_s0_ce/metrics.json",
+          "runs/reused/clean_none_b3_lr0.0002_s1_ce/metrics.json",
+          "runs/reused/clean_none_b3_lr0.0002_s2_ce/metrics.json",
+          "runs/reused/clean_none_b3_lr0.0002_s3_ce/metrics.json",
+          "runs/reused/clean_none_b3_lr0.0002_s4_ce/metrics.json"
+        ],
+        "parameters": 2094169,
+        "partial_flops": 7668782240,
+        "complexity_source": "runs/reused/clean_none_b3_lr0.0002_s0_ce/complexity.json"
+      },
+      "+conv": {
+        "summary": {
+          "dice": {
+            "mean": 0.8157807885842804,
+            "sample_sd": 0.0017850072793650189
+          },
+          "cldice": {
+            "mean": 0.8182183863460333,
+            "sample_sd": 0.005348922742773716
+          },
+          "betti0_err": {
+            "mean": 82.95,
+            "sample_sd": 10.320368210485517
+          },
+          "betti1_err": {
+            "mean": 29.909999999999997,
+            "sample_sd": 1.8826178581964006
+          },
+          "patch_betti0_err": {
+            "mean": 1.1577777777777778,
+            "sample_sd": 0.11116470061840784
+          },
+          "patch_betti1_err": {
+            "mean": 0.3206944444444445,
+            "sample_sd": 0.005734950783906291
+          }
+        },
+        "source_files": [
+          "runs/reused/clean_conv_b2-b3-b4_lr0.0002_s0_ce/metrics.json",
+          "runs/reused/clean_conv_b2-b3-b4_lr0.0002_s1_ce/metrics.json",
+          "runs/reused/clean_conv_b2-b3-b4_lr0.0002_s2_ce/metrics.json",
+          "runs/reused/clean_conv_b2-b3-b4_lr0.0002_s3_ce/metrics.json",
+          "runs/reused/clean_conv_b2-b3-b4_lr0.0002_s4_ce/metrics.json"
+        ],
+        "parameters": 2174524,
+        "partial_flops": 7796871376,
+        "complexity_source": "runs/reused/clean_conv_b2-b3-b4_lr0.0002_s0_ce/complexity.json"
+      },
+      "+sumprod": {
+        "summary": {
+          "dice": {
+            "mean": 0.8150900855559566,
+            "sample_sd": 0.0018590370986855862
+          },
+          "cldice": {
+            "mean": 0.8182660244404817,
+            "sample_sd": 0.004286408244620653
+          },
+          "betti0_err": {
+            "mean": 80.66,
+            "sample_sd": 7.926963479164014
+          },
+          "betti1_err": {
+            "mean": 29.45,
+            "sample_sd": 1.9400386594086207
+          },
+          "patch_betti0_err": {
+            "mean": 1.1462499999999998,
+            "sample_sd": 0.08746913035712707
+          },
+          "patch_betti1_err": {
+            "mean": 0.3188888888888889,
+            "sample_sd": 0.009335048618836918
+          }
+        },
+        "source_files": [
+          "runs/reused/clean_sumprod_b2-b3-b4_lr0.0002_s0_ce/metrics.json",
+          "runs/reused/clean_sumprod_b2-b3-b4_lr0.0002_s1_ce/metrics.json",
+          "runs/reused/clean_sumprod_b2-b3-b4_lr0.0002_s2_ce/metrics.json",
+          "runs/reused/clean_sumprod_b2-b3-b4_lr0.0002_s3_ce/metrics.json",
+          "runs/reused/clean_sumprod_b2-b3-b4_lr0.0002_s4_ce/metrics.json"
+        ],
+        "parameters": 2174369,
+        "partial_flops": 7899095264.0,
+        "complexity_source": "runs/reused/clean_sumprod_b2-b3-b4_lr0.0002_s0_ce/complexity.json"
+      },
+      "+trop": {
+        "summary": {
+          "dice": {
+            "mean": 0.8167128973014306,
+            "sample_sd": 0.0011408504847815332
+          },
+          "cldice": {
+            "mean": 0.820267546737148,
+            "sample_sd": 0.0030795006498717014
+          },
+          "betti0_err": {
+            "mean": 78.37,
+            "sample_sd": 4.390558051091002
+          },
+          "betti1_err": {
+            "mean": 28.85,
+            "sample_sd": 0.7648529270389182
+          },
+          "patch_betti0_err": {
+            "mean": 1.1272222222222221,
+            "sample_sd": 0.04787739936933039
+          },
+          "patch_betti1_err": {
+            "mean": 0.3197222222222222,
+            "sample_sd": 0.012223011338162072
+          }
+        },
+        "source_files": [
+          "runs/reused/clean_trop_b2-b3-b4_lr0.0002_s0_ce/metrics.json",
+          "runs/reused/clean_trop_b2-b3-b4_lr0.0002_s1_ce/metrics.json",
+          "runs/reused/clean_trop_b2-b3-b4_lr0.0002_s2_ce/metrics.json",
+          "runs/reused/clean_trop_b2-b3-b4_lr0.0002_s3_ce/metrics.json",
+          "runs/reused/clean_trop_b2-b3-b4_lr0.0002_s4_ce/metrics.json"
+        ],
+        "parameters": 2174369,
+        "partial_flops": 7797935264,
+        "complexity_source": "runs/reused/clean_trop_b2-b3-b4_lr0.0002_s0_ce/complexity.json"
+      },
+      "+mamba": {
+        "summary": {
+          "dice": {
+            "mean": 0.8164114228495987,
+            "sample_sd": 0.0008701674315958789
+          },
+          "cldice": {
+            "mean": 0.821101407142623,
+            "sample_sd": 0.003390398540058298
+          },
+          "betti0_err": {
+            "mean": 82.58,
+            "sample_sd": 6.588778338963905
+          },
+          "betti1_err": {
+            "mean": 29.72,
+            "sample_sd": 1.1454256850621076
+          },
+          "patch_betti0_err": {
+            "mean": 1.1686111111111113,
+            "sample_sd": 0.05670767171083824
+          },
+          "patch_betti1_err": {
+            "mean": 0.32305555555555554,
+            "sample_sd": 0.0039099134056275525
+          }
+        },
+        "source_files": [
+          "runs/reused/clean_mamba_b2-b3-b4_lr0.0002_s0_ce/metrics.json",
+          "runs/reused/clean_mamba_b2-b3-b4_lr0.0002_s1_ce/metrics.json",
+          "runs/reused/clean_mamba_b2-b3-b4_lr0.0002_s2_ce/metrics.json",
+          "runs/reused/clean_mamba_b2-b3-b4_lr0.0002_s3_ce/metrics.json",
+          "runs/reused/clean_mamba_b2-b3-b4_lr0.0002_s4_ce/metrics.json"
+        ],
+        "parameters": 2461593,
+        "partial_flops": 7668782240,
+        "complexity_source": "runs/reused/clean_mamba_b2-b3-b4_lr0.0002_s0_ce/complexity.json"
+      },
+      "unet": {
+        "summary": {
+          "dice": {
+            "mean": 0.8129813485265919,
+            "sample_sd": 0.001665358037686737
+          },
+          "cldice": {
+            "mean": 0.8156520122409837,
+            "sample_sd": 0.0038571817636388803
+          },
+          "betti0_err": {
+            "mean": 94.42999999999999,
+            "sample_sd": 5.739947734953693
+          },
+          "betti1_err": {
+            "mean": 29.8,
+            "sample_sd": 0.8154753215150039
+          },
+          "patch_betti0_err": {
+            "mean": 1.2615277777777778,
+            "sample_sd": 0.0782623792124925
+          },
+          "patch_betti1_err": {
+            "mean": 0.32125000000000004,
+            "sample_sd": 0.013126653335019467
+          }
+        },
+        "source_files": [
+          "runs/drive_unet_none_orig_b1_lr0.0002_s0/metrics.json",
+          "runs/drive_unet_none_orig_b1_lr0.0002_s1/metrics.json",
+          "runs/drive_unet_none_orig_b1_lr0.0002_s2/metrics.json",
+          "runs/drive_unet_none_orig_b1_lr0.0002_s3/metrics.json",
+          "runs/drive_unet_none_orig_b1_lr0.0002_s4/metrics.json"
+        ],
+        "parameters": 488417,
+        "partial_flops": 2071465984,
+        "complexity_source": "runs/drive_unet_none_orig_b1_lr0.0002_s0/complexity.json"
+      }
+    },
+    "chase": {
+      "unet": {
+        "summary": {
+          "dice": {
+            "mean": 0.7974349511335315,
+            "sample_sd": 0.003003092791077916
+          },
+          "cldice": {
+            "mean": 0.8225657328375136,
+            "sample_sd": 0.004466762487347363
+          },
+          "betti0_err": {
+            "mean": 62.75,
+            "sample_sd": 2.1866069605669876
+          },
+          "betti1_err": {
+            "mean": 3.65,
+            "sample_sd": 0.807194214548147
+          },
+          "patch_betti0_err": {
+            "mean": 0.40722222222222226,
+            "sample_sd": 0.018815215802084544
+          },
+          "patch_betti1_err": {
+            "mean": 0.03111111111111111,
+            "sample_sd": 0.004063538566202164
+          }
+        },
+        "source_files": [
+          "runs/chase_unet_none_orig_b1_lr0.0002_s0/metrics.json",
+          "runs/chase_unet_none_orig_b1_lr0.0002_s1/metrics.json",
+          "runs/chase_unet_none_orig_b1_lr0.0002_s2/metrics.json",
+          "runs/chase_unet_none_orig_b1_lr0.0002_s3/metrics.json",
+          "runs/chase_unet_none_orig_b1_lr0.0002_s4/metrics.json"
+        ],
+        "parameters": 488417,
+        "partial_flops": 2071465984,
+        "complexity_source": "runs/chase_unet_none_orig_b1_lr0.0002_s0/complexity.json"
+      },
+      "dscnet": {
+        "summary": {
+          "dice": {
+            "mean": 0.804566766827605,
+            "sample_sd": 0.0012527404930019962
+          },
+          "cldice": {
+            "mean": 0.8317650708063175,
+            "sample_sd": 0.0024523280364133287
+          },
+          "betti0_err": {
+            "mean": 49.375,
+            "sample_sd": 3.183207894561711
+          },
+          "betti1_err": {
+            "mean": 3.275,
+            "sample_sd": 0.9370832406995656
+          },
+          "patch_betti0_err": {
+            "mean": 0.3513333333333333,
+            "sample_sd": 0.018285290587022444
+          },
+          "patch_betti1_err": {
+            "mean": 0.03222222222222222,
+            "sample_sd": 0.0017568209223157666
+          }
+        },
+        "source_files": [
+          "runs/chase_dscnet_none_orig_b1_lr0.0002_s0/metrics.json",
+          "runs/chase_dscnet_none_orig_b1_lr0.0002_s1/metrics.json",
+          "runs/chase_dscnet_none_orig_b1_lr0.0002_s2/metrics.json",
+          "runs/chase_dscnet_none_orig_b1_lr0.0002_s3/metrics.json",
+          "runs/chase_dscnet_none_orig_b1_lr0.0002_s4/metrics.json"
+        ],
+        "parameters": 2094169,
+        "partial_flops": 7668782240,
+        "complexity_source": "runs/chase_dscnet_none_orig_b1_lr0.0002_s0/complexity.json"
+      },
+      "+conv": {
+        "summary": {
+          "dice": {
+            "mean": 0.8034960562235408,
+            "sample_sd": 0.0023171785252472507
+          },
+          "cldice": {
+            "mean": 0.8325967218264815,
+            "sample_sd": 0.0040304836848969825
+          },
+          "betti0_err": {
+            "mean": 50.525,
+            "sample_sd": 6.691529160064984
+          },
+          "betti1_err": {
+            "mean": 3.575,
+            "sample_sd": 0.7885905147793753
+          },
+          "patch_betti0_err": {
+            "mean": 0.3485555555555556,
+            "sample_sd": 0.022462588925468232
+          },
+          "patch_betti1_err": {
+            "mean": 0.02888888888888889,
+            "sample_sd": 0.002151657414559675
+          }
+        },
+        "source_files": [
+          "runs/chase_dscnet_conv_orig_b1_lr0.0002_s0/metrics.json",
+          "runs/chase_dscnet_conv_orig_b1_lr0.0002_s1/metrics.json",
+          "runs/chase_dscnet_conv_orig_b1_lr0.0002_s2/metrics.json",
+          "runs/chase_dscnet_conv_orig_b1_lr0.0002_s3/metrics.json",
+          "runs/chase_dscnet_conv_orig_b1_lr0.0002_s4/metrics.json"
+        ],
+        "parameters": 2174524,
+        "partial_flops": 7796871376,
+        "complexity_source": "runs/chase_dscnet_conv_orig_b1_lr0.0002_s0/complexity.json"
+      },
+      "+trop": {
+        "summary": {
+          "dice": {
+            "mean": 0.8033272349147902,
+            "sample_sd": 0.001658402399669676
+          },
+          "cldice": {
+            "mean": 0.834275874387723,
+            "sample_sd": 0.003726070391025901
+          },
+          "betti0_err": {
+            "mean": 50.05,
+            "sample_sd": 5.549915539897882
+          },
+          "betti1_err": {
+            "mean": 3.25,
+            "sample_sd": 0.8926785535678563
+          },
+          "patch_betti0_err": {
+            "mean": 0.3466666666666667,
+            "sample_sd": 0.029128281619818487
+          },
+          "patch_betti1_err": {
+            "mean": 0.02988888888888889,
+            "sample_sd": 0.0037965221251710854
+          }
+        },
+        "source_files": [
+          "runs/chase_dscnet_trop_orig_b1_lr0.0002_s0/metrics.json",
+          "runs/chase_dscnet_trop_orig_b1_lr0.0002_s1/metrics.json",
+          "runs/chase_dscnet_trop_orig_b1_lr0.0002_s2/metrics.json",
+          "runs/chase_dscnet_trop_orig_b1_lr0.0002_s3/metrics.json",
+          "runs/chase_dscnet_trop_orig_b1_lr0.0002_s4/metrics.json"
+        ],
+        "parameters": 2174369,
+        "partial_flops": 7797935264,
+        "complexity_source": "runs/chase_dscnet_trop_orig_b1_lr0.0002_s0/complexity.json"
+      },
+      "+mamba": {
+        "summary": {
+          "dice": {
+            "mean": 0.803929118693463,
+            "sample_sd": 0.0033149321945798093
+          },
+          "cldice": {
+            "mean": 0.8341988330857733,
+            "sample_sd": 0.005226972841627119
+          },
+          "betti0_err": {
+            "mean": 49.5,
+            "sample_sd": 2.9856427281240467
+          },
+          "betti1_err": {
+            "mean": 3.7,
+            "sample_sd": 0.758287544405155
+          },
+          "patch_betti0_err": {
+            "mean": 0.35222222222222227,
+            "sample_sd": 0.011439589045541114
+          },
+          "patch_betti1_err": {
+            "mean": 0.03,
+            "sample_sd": 0.0029133579115837556
+          }
+        },
+        "source_files": [
+          "runs/chase_dscnet_mamba_orig_b1_lr0.0002_s0/metrics.json",
+          "runs/chase_dscnet_mamba_orig_b1_lr0.0002_s1/metrics.json",
+          "runs/chase_dscnet_mamba_orig_b1_lr0.0002_s2/metrics.json",
+          "runs/chase_dscnet_mamba_orig_b1_lr0.0002_s3/metrics.json",
+          "runs/chase_dscnet_mamba_orig_b1_lr0.0002_s4/metrics.json"
+        ],
+        "parameters": 2461593,
+        "partial_flops": 7668782240,
+        "complexity_source": "runs/chase_dscnet_mamba_orig_b1_lr0.0002_s0/complexity.json"
+      }
+    }
+  },
+  "reuse_provenance": "runs/reuse_provenance.json",
+  "statistics": {
+    "drive": [
+      {
+        "dataset": "drive",
+        "model": "+conv",
+        "reference": "dscnet",
+        "metric": "dice",
+        "delta": -0.0007828627231499999,
+        "ci_low": -0.00147193796265625,
+        "ci_high": -5.371715001625059e-05,
+        "p": 0.021484375,
+        "wilcoxon_statistic": 44.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.08703616008003903,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": -0.07828627231499999,
+        "ci_low_pp": -0.147193796265625,
+        "ci_high_pp": -0.005371715001625059,
+        "p_holm": 0.171875
+      },
+      {
+        "dataset": "drive",
+        "model": "+conv",
+        "reference": "dscnet",
+        "metric": "cldice",
+        "delta": -0.0007540335692500001,
+        "ci_low": -0.0016365682903987499,
+        "ci_high": 0.0001276124238012499,
+        "p": 0.15364646911621094,
+        "wilcoxon_statistic": 66.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.034394084337106307,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": -0.07540335692500001,
+        "ci_low_pp": -0.163656829039875,
+        "ci_high_pp": 0.012761242380124991,
+        "p_holm": 0.8574371337890625
+      },
+      {
+        "dataset": "drive",
+        "model": "+conv",
+        "reference": "dscnet",
+        "metric": "betti0_err",
+        "delta": -1.8199999999999998,
+        "ci_low": -4.27,
+        "ci_high": 0.7000000000000003,
+        "p": 0.17093532529971855,
+        "wilcoxon_statistic": 61.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.07616981200521175,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "absolute error",
+        "p_holm": 0.8574371337890625
+      },
+      {
+        "dataset": "drive",
+        "model": "+sumprod",
+        "reference": "dscnet",
+        "metric": "dice",
+        "delta": -0.0014735657513999998,
+        "ci_low": -0.00200092918303375,
+        "ci_high": -0.0009756879056275003,
+        "p": 3.62396240234375e-05,
+        "wilcoxon_statistic": 7.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.3006170971005851,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": -0.14735657513999997,
+        "ci_low_pp": -0.200092918303375,
+        "ci_high_pp": -0.09756879056275003,
+        "p_holm": 0.0004711151123046875
+      },
+      {
+        "dataset": "drive",
+        "model": "+sumprod",
+        "reference": "dscnet",
+        "metric": "cldice",
+        "delta": -0.0007063954746000001,
+        "ci_low": -0.0016051978818899999,
+        "ci_high": 8.434725479624976e-05,
+        "p": 0.21616744995117188,
+        "wilcoxon_statistic": 71.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.909285195894396,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": -0.07063954746000001,
+        "ci_low_pp": -0.16051978818899998,
+        "ci_high_pp": 0.008434725479624976,
+        "p_holm": 0.8574371337890625
+      },
+      {
+        "dataset": "drive",
+        "model": "+sumprod",
+        "reference": "dscnet",
+        "metric": "betti0_err",
+        "delta": -4.109999999999999,
+        "ci_low": -6.220000000000001,
+        "ci_high": -1.85,
+        "p": 0.004539367910299599,
+        "wilcoxon_statistic": 29.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.5452705398018413,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "absolute error",
+        "p_holm": 0.04085431119269639
+      },
+      {
+        "dataset": "drive",
+        "model": "+trop",
+        "reference": "dscnet",
+        "metric": "dice",
+        "delta": 0.00014924599409999996,
+        "ci_low": -0.00054957022129125,
+        "ci_high": 0.0008524192674699998,
+        "p": 0.7285060882568359,
+        "wilcoxon_statistic": 95.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.16777245447852862,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": 0.014924599409999996,
+        "ci_low_pp": -0.054957022129125,
+        "ci_high_pp": 0.08524192674699999,
+        "p_holm": 0.9047508239746094
+      },
+      {
+        "dataset": "drive",
+        "model": "+trop",
+        "reference": "dscnet",
+        "metric": "cldice",
+        "delta": 0.00129512682195,
+        "ci_low": 0.00036096417199625,
+        "ci_high": 0.002211630140181249,
+        "p": 0.023950576782226562,
+        "wilcoxon_statistic": 45.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.06422521900903634,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": 0.129512682195,
+        "ci_low_pp": 0.036096417199625,
+        "ci_high_pp": 0.2211630140181249,
+        "p_holm": 0.171875
+      },
+      {
+        "dataset": "drive",
+        "model": "+trop",
+        "reference": "dscnet",
+        "metric": "betti0_err",
+        "delta": -6.4,
+        "ci_low": -9.2,
+        "ci_high": -3.659750000000003,
+        "p": 0.0008908778281587568,
+        "wilcoxon_statistic": 16.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.010574613532435937,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "absolute error",
+        "p_holm": 0.009799656109746325
+      },
+      {
+        "dataset": "drive",
+        "model": "+mamba",
+        "reference": "dscnet",
+        "metric": "dice",
+        "delta": -0.0001522284578,
+        "ci_low": -0.0007317476268475,
+        "ci_high": 0.0004660431592999996,
+        "p": 0.4523754119873047,
+        "wilcoxon_statistic": 84.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.594976105579049,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": -0.015222845779999999,
+        "ci_low_pp": -0.07317476268475001,
+        "ci_high_pp": 0.04660431592999996,
+        "p_holm": 0.9047508239746094
+      },
+      {
+        "dataset": "drive",
+        "model": "+mamba",
+        "reference": "dscnet",
+        "metric": "cldice",
+        "delta": 0.0021289872275,
+        "ci_low": 0.0011052676728475002,
+        "ci_high": 0.0031549953165487497,
+        "p": 0.001689910888671875,
+        "wilcoxon_statistic": 25.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.27822450843605206,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": 0.21289872275,
+        "ci_low_pp": 0.11052676728475003,
+        "ci_high_pp": 0.315499531654875,
+        "p_holm": 0.01689910888671875
+      },
+      {
+        "dataset": "drive",
+        "model": "+mamba",
+        "reference": "dscnet",
+        "metric": "betti0_err",
+        "delta": -2.19,
+        "ci_low": -4.9,
+        "ci_high": 0.7102499999999963,
+        "p": 0.14290618896484375,
+        "wilcoxon_statistic": 65.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.4691170023840757,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "absolute error",
+        "p_holm": 0.8574371337890625
+      },
+      {
+        "dataset": "drive",
+        "model": "dscnet",
+        "reference": "unet",
+        "metric": "dice",
+        "delta": 0.0035823027808,
+        "ci_low": 0.00264222166830875,
+        "ci_high": 0.004502876621561251,
+        "p": 9.5367431640625e-06,
+        "wilcoxon_statistic": 3.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.4851618127601153,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": 0.35823027808,
+        "ci_low_pp": 0.264222166830875,
+        "ci_high_pp": 0.4502876621561251,
+        "p_holm": 0.0001430511474609375
+      },
+      {
+        "dataset": "drive",
+        "model": "dscnet",
+        "reference": "unet",
+        "metric": "cldice",
+        "delta": 0.0033204076741500006,
+        "ci_low": 0.0021965670347712505,
+        "ci_high": 0.00449942599331375,
+        "p": 2.6702880859375e-05,
+        "wilcoxon_statistic": 6.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.31491654702631267,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": 0.33204076741500005,
+        "ci_low_pp": 0.21965670347712504,
+        "ci_high_pp": 0.44994259933137504,
+        "p_holm": 0.00037384033203125
+      },
+      {
+        "dataset": "drive",
+        "model": "dscnet",
+        "reference": "unet",
+        "metric": "betti0_err",
+        "delta": -9.659999999999998,
+        "ci_low": -11.629999999999999,
+        "ci_high": -7.669750000000002,
+        "p": 8.832385863081277e-05,
+        "wilcoxon_statistic": 0.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.03101035192874263,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "absolute error",
+        "p_holm": 0.0010598863035697532
+      }
+    ],
+    "chase": [
+      {
+        "dataset": "chase",
+        "model": "+conv",
+        "reference": "dscnet",
+        "metric": "dice",
+        "delta": -0.001070710604,
+        "ci_low": -0.002511641657875,
+        "ci_high": 0.00018829117812500004,
+        "p": 0.3125,
+        "wilcoxon_statistic": 10.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.6608763353124345,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": -0.1070710604,
+        "ci_low_pp": -0.2511641657875,
+        "ci_high_pp": 0.018829117812500004,
+        "p_holm": 1.0
+      },
+      {
+        "dataset": "chase",
+        "model": "+conv",
+        "reference": "dscnet",
+        "metric": "cldice",
+        "delta": 0.00083165102025,
+        "ci_low": -0.001620485666675,
+        "ci_high": 0.002954826570115621,
+        "p": 0.546875,
+        "wilcoxon_statistic": 13.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.6191094817063445,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": 0.083165102025,
+        "ci_low_pp": -0.1620485666675,
+        "ci_high_pp": 0.2954826570115621,
+        "p_holm": 1.0
+      },
+      {
+        "dataset": "chase",
+        "model": "+conv",
+        "reference": "dscnet",
+        "metric": "betti0_err",
+        "delta": 1.15,
+        "ci_low": -0.7000000000000001,
+        "ci_high": 2.925,
+        "p": 0.4453125,
+        "wilcoxon_statistic": 12.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.10411099860105807,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "absolute error",
+        "p_holm": 1.0
+      },
+      {
+        "dataset": "chase",
+        "model": "+trop",
+        "reference": "dscnet",
+        "metric": "dice",
+        "delta": -0.0012395319128749999,
+        "ci_low": -0.002477434720371875,
+        "ci_high": -0.0001264811797062503,
+        "p": 0.109375,
+        "wilcoxon_statistic": 6.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.5482876359173389,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": -0.12395319128749999,
+        "ci_low_pp": -0.24774347203718752,
+        "ci_high_pp": -0.01264811797062503,
+        "p_holm": 0.875
+      },
+      {
+        "dataset": "chase",
+        "model": "+trop",
+        "reference": "dscnet",
+        "metric": "cldice",
+        "delta": 0.00251080358125,
+        "ci_low": 0.000699632643,
+        "ci_high": 0.004193750438934374,
+        "p": 0.0390625,
+        "wilcoxon_statistic": 3.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.2828140417711775,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": 0.251080358125,
+        "ci_low_pp": 0.0699632643,
+        "ci_high_pp": 0.4193750438934374,
+        "p_holm": 0.3515625
+      },
+      {
+        "dataset": "chase",
+        "model": "+trop",
+        "reference": "dscnet",
+        "metric": "betti0_err",
+        "delta": 0.6750000000000003,
+        "ci_low": -1.575,
+        "ci_high": 2.95,
+        "p": 0.671875,
+        "wilcoxon_statistic": 14.5,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.10753176263433936,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "absolute error",
+        "p_holm": 1.0
+      },
+      {
+        "dataset": "chase",
+        "model": "+mamba",
+        "reference": "dscnet",
+        "metric": "dice",
+        "delta": -0.0006376481341249999,
+        "ci_low": -0.002317000940328125,
+        "ci_high": 0.0010507199723749998,
+        "p": 0.4609375,
+        "wilcoxon_statistic": 12.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.004174870490745422,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": -0.0637648134125,
+        "ci_low_pp": -0.2317000940328125,
+        "ci_high_pp": 0.10507199723749998,
+        "p_holm": 1.0
+      },
+      {
+        "dataset": "chase",
+        "model": "+mamba",
+        "reference": "dscnet",
+        "metric": "cldice",
+        "delta": 0.002433762279625,
+        "ci_low": -0.00012013557733749999,
+        "ci_high": 0.005105318582874999,
+        "p": 0.25,
+        "wilcoxon_statistic": 9.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.2161263851964546,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": 0.24337622796250002,
+        "ci_low_pp": -0.01201355773375,
+        "ci_high_pp": 0.5105318582874999,
+        "p_holm": 1.0
+      },
+      {
+        "dataset": "chase",
+        "model": "+mamba",
+        "reference": "dscnet",
+        "metric": "betti0_err",
+        "delta": 0.125,
+        "ci_low": -1.625,
+        "ci_high": 1.8249999999999997,
+        "p": 0.9375,
+        "wilcoxon_statistic": 17.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.15043805367598237,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "absolute error",
+        "p_holm": 1.0
+      },
+      {
+        "dataset": "chase",
+        "model": "dscnet",
+        "reference": "unet",
+        "metric": "dice",
+        "delta": 0.007131815694124999,
+        "ci_low": 0.005787516954525,
+        "ci_high": 0.0089159364315,
+        "p": 0.0078125,
+        "wilcoxon_statistic": 0.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 1.3949440526766312,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": 0.7131815694124999,
+        "ci_low_pp": 0.5787516954525,
+        "ci_high_pp": 0.89159364315,
+        "p_holm": 0.09375
+      },
+      {
+        "dataset": "chase",
+        "model": "dscnet",
+        "reference": "unet",
+        "metric": "cldice",
+        "delta": 0.009199337968875,
+        "ci_low": 0.00739661756875,
+        "ci_high": 0.01144765764185625,
+        "p": 0.0078125,
+        "wilcoxon_statistic": 0.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 1.2258733482808857,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "proportion",
+        "delta_pp": 0.9199337968875,
+        "ci_low_pp": 0.7396617568749999,
+        "ci_high_pp": 1.144765764185625,
+        "p_holm": 0.09375
+      },
+      {
+        "dataset": "chase",
+        "model": "dscnet",
+        "reference": "unet",
+        "metric": "betti0_err",
+        "delta": -13.375,
+        "ci_low": -16.299999999999997,
+        "ci_high": -10.475,
+        "p": 0.0078125,
+        "wilcoxon_statistic": 0.0,
+        "n_images": 8,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.015384409640213847,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "delta_unit": "absolute error",
+        "p_holm": 0.09375
+      }
+    ]
+  },
+  "inflation": {
+    "checkpoint": [
+      {
+        "dataset": "chase",
+        "variant": "dscnet",
+        "kind": "conv",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 0.0002,
+        "mean_pp": 0.29933810234069824,
+        "sample_sd_pp": 0.248521942059363,
+        "max_pp": 0.630265474319458,
+        "runs": 5
+      },
+      {
+        "dataset": "chase",
+        "variant": "dscnet",
+        "kind": "mamba",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 0.0002,
+        "mean_pp": 0.37198305130004883,
+        "sample_sd_pp": 0.26252932258975,
+        "max_pp": 0.6740808486938477,
+        "runs": 5
+      },
+      {
+        "dataset": "chase",
+        "variant": "dscnet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 5e-05,
+        "mean_pp": 0.4052698612213135,
+        "sample_sd_pp": null,
+        "max_pp": 0.4052698612213135,
+        "runs": 1
+      },
+      {
+        "dataset": "chase",
+        "variant": "dscnet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 0.0001,
+        "mean_pp": 0.38598179817199707,
+        "sample_sd_pp": 0.26092534573007475,
+        "max_pp": 0.7280349731445312,
+        "runs": 5
+      },
+      {
+        "dataset": "chase",
+        "variant": "dscnet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 0.0002,
+        "mean_pp": 0.21399378776550293,
+        "sample_sd_pp": 0.25429328775770366,
+        "max_pp": 0.5125939846038818,
+        "runs": 5
+      },
+      {
+        "dataset": "chase",
+        "variant": "dscnet",
+        "kind": "trop",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 0.0002,
+        "mean_pp": 0.36080002784729004,
+        "sample_sd_pp": 0.224159204841772,
+        "max_pp": 0.5933761596679688,
+        "runs": 5
+      },
+      {
+        "dataset": "chase",
+        "variant": "unet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 5e-05,
+        "mean_pp": 0.3671586513519287,
+        "sample_sd_pp": null,
+        "max_pp": 0.3671586513519287,
+        "runs": 1
+      },
+      {
+        "dataset": "chase",
+        "variant": "unet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 0.0001,
+        "mean_pp": 0.5339145660400391,
+        "sample_sd_pp": null,
+        "max_pp": 0.5339145660400391,
+        "runs": 1
+      },
+      {
+        "dataset": "chase",
+        "variant": "unet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 0.0002,
+        "mean_pp": 0.341266393661499,
+        "sample_sd_pp": 0.2964074105039421,
+        "max_pp": 0.7482409477233887,
+        "runs": 5
+      },
+      {
+        "dataset": "drive",
+        "variant": "dscnet",
+        "kind": "none",
+        "dsconv": "fix",
+        "batch": 8,
+        "lr": 0.0002,
+        "mean_pp": 0.0,
+        "sample_sd_pp": null,
+        "max_pp": 0.0,
+        "runs": 1
+      },
+      {
+        "dataset": "drive",
+        "variant": "dscnet",
+        "kind": "none",
+        "dsconv": "fix",
+        "batch": 8,
+        "lr": 0.0005,
+        "mean_pp": 0.0007212162017822266,
+        "sample_sd_pp": null,
+        "max_pp": 0.0007212162017822266,
+        "runs": 1
+      },
+      {
+        "dataset": "drive",
+        "variant": "dscnet",
+        "kind": "none",
+        "dsconv": "fix",
+        "batch": 8,
+        "lr": 0.001,
+        "mean_pp": 0.07311463356018066,
+        "sample_sd_pp": 0.08331538287162853,
+        "max_pp": 0.20293593406677246,
+        "runs": 5
+      },
+      {
+        "dataset": "drive",
+        "variant": "dscnet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 0.0001,
+        "mean_pp": 0.11682510375976562,
+        "sample_sd_pp": 0.10166315825573373,
+        "max_pp": 0.18520355224609375,
+        "runs": 3
+      },
+      {
+        "dataset": "drive",
+        "variant": "dscnet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 8,
+        "lr": 0.001,
+        "mean_pp": 0.047125816345214844,
+        "sample_sd_pp": 0.06734534096926743,
+        "max_pp": 0.1450657844543457,
+        "runs": 5
+      },
+      {
+        "dataset": "drive",
+        "variant": "unet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 5e-05,
+        "mean_pp": 0.054574012756347656,
+        "sample_sd_pp": null,
+        "max_pp": 0.054574012756347656,
+        "runs": 1
+      },
+      {
+        "dataset": "drive",
+        "variant": "unet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 0.0001,
+        "mean_pp": 0.11016726493835449,
+        "sample_sd_pp": null,
+        "max_pp": 0.11016726493835449,
+        "runs": 1
+      },
+      {
+        "dataset": "drive",
+        "variant": "unet",
+        "kind": "none",
+        "dsconv": "orig",
+        "batch": 1,
+        "lr": 0.0002,
+        "mean_pp": 0.08842825889587402,
+        "sample_sd_pp": 0.10053571519086302,
+        "max_pp": 0.23267269134521484,
+        "runs": 5
+      }
+    ],
+    "seed": [
+      {
+        "dataset": "drive",
+        "model": "dscnet",
+        "best_seed_minus_mean_pp": 0.07292813245622654,
+        "sample_sd_pp": 0.06907226419551996,
+        "seeds": 5
+      },
+      {
+        "dataset": "drive",
+        "model": "+conv",
+        "best_seed_minus_mean_pp": 0.21903723354566296,
+        "sample_sd_pp": 0.17850072793650282,
+        "seeds": 5
+      },
+      {
+        "dataset": "drive",
+        "model": "+sumprod",
+        "best_seed_minus_mean_pp": 0.3091512210594942,
+        "sample_sd_pp": 0.1859037098685614,
+        "seeds": 5
+      },
+      {
+        "dataset": "drive",
+        "model": "+trop",
+        "best_seed_minus_mean_pp": 0.15327064278363878,
+        "sample_sd_pp": 0.11408504847815691,
+        "seeds": 5
+      },
+      {
+        "dataset": "drive",
+        "model": "+mamba",
+        "best_seed_minus_mean_pp": 0.13851203556852454,
+        "sample_sd_pp": 0.08701674315958921,
+        "seeds": 5
+      },
+      {
+        "dataset": "drive",
+        "model": "unet",
+        "best_seed_minus_mean_pp": 0.1668492080551971,
+        "sample_sd_pp": 0.166535803768675,
+        "seeds": 5
+      },
+      {
+        "dataset": "chase",
+        "model": "unet",
+        "best_seed_minus_mean_pp": 0.34757023790925246,
+        "sample_sd_pp": 0.3003092791077902,
+        "seeds": 5
+      },
+      {
+        "dataset": "chase",
+        "model": "dscnet",
+        "best_seed_minus_mean_pp": 0.15432396919995028,
+        "sample_sd_pp": 0.12527404930019603,
+        "seeds": 5
+      },
+      {
+        "dataset": "chase",
+        "model": "+conv",
+        "best_seed_minus_mean_pp": 0.31267372247536684,
+        "sample_sd_pp": 0.2317178525247252,
+        "seeds": 5
+      },
+      {
+        "dataset": "chase",
+        "model": "+trop",
+        "best_seed_minus_mean_pp": 0.2526318529596807,
+        "sample_sd_pp": 0.1658402399669642,
+        "seeds": 5
+      },
+      {
+        "dataset": "chase",
+        "model": "+mamba",
+        "best_seed_minus_mean_pp": 0.42215829922261605,
+        "sample_sd_pp": 0.3314932194579812,
+        "seeds": 5
+      }
+    ],
+    "learning_rate": [
+      {
+        "dataset": "drive",
+        "default_lr": 0.0001,
+        "tuned_lr": 0.0002,
+        "tuned_minus_default_mean_pp": 0.5574159649353949,
+        "sample_sd_pp": 0.13447691452469504,
+        "per_seed_difference_pp": "[0.6739729120291971, 0.41227662544628396, 0.4765765183945003, 0.7242955672923435, 0.49995820151464976]"
+      },
+      {
+        "dataset": "chase",
+        "default_lr": 0.0001,
+        "tuned_lr": 0.0002,
+        "tuned_minus_default_mean_pp": 0.41447601155045755,
+        "sample_sd_pp": 0.26968730829904114,
+        "per_seed_difference_pp": "[0.6965520487548171, 0.7093678327033448, 0.2631073499172132, 0.12779444572734722, 0.2755583806495654]"
+      }
+    ],
+    "source": "tables/E3_*"
+  },
+  "sources": {},
+  "learning_rates": {
+    "values": {
+      "drive_unet": 0.0002,
+      "chase_unet": 0.0002,
+      "E2": 0.001,
+      "chase_dscnet": 0.0002
+    },
+    "source": "runs/lr_selected.json"
+  },
+  "units": "Dice/clDice stored as proportions in JSON; paper effect fields explicitly pp; beta metrics absolute error.",
+  "E2": {
+    "lr": 0.001,
+    "groups": {
+      "orig": [
+        "runs/drive_dscnet_none_orig_b8_lr0.001_s0",
+        "runs/drive_dscnet_none_orig_b8_lr0.001_s1",
+        "runs/drive_dscnet_none_orig_b8_lr0.001_s2",
+        "runs/drive_dscnet_none_orig_b8_lr0.001_s3",
+        "runs/drive_dscnet_none_orig_b8_lr0.001_s4"
+      ],
+      "fix": [
+        "runs/drive_dscnet_none_fix_b8_lr0.001_s0",
+        "runs/drive_dscnet_none_fix_b8_lr0.001_s1",
+        "runs/drive_dscnet_none_fix_b8_lr0.001_s2",
+        "runs/drive_dscnet_none_fix_b8_lr0.001_s3",
+        "runs/drive_dscnet_none_fix_b8_lr0.001_s4"
+      ]
+    },
+    "statistics": [
+      {
+        "inference_batch": 1,
+        "metric": "dice",
+        "delta": -0.00851479838955,
+        "ci_low": -0.010297961415345001,
+        "ci_high": -0.00668029984891375,
+        "p": 3.814697265625e-06,
+        "wilcoxon_statistic": 1.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.06980546040505453,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "p_holm": 2.288818359375e-05
+      },
+      {
+        "inference_batch": 1,
+        "metric": "cldice",
+        "delta": -0.012816359644249996,
+        "ci_low": -0.014808999605318753,
+        "ci_high": -0.01082363689119625,
+        "p": 1.9073486328125e-06,
+        "wilcoxon_statistic": 0.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.09796300610617432,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "p_holm": 1.52587890625e-05
+      },
+      {
+        "inference_batch": 1,
+        "metric": "betti0_err",
+        "delta": -0.40999999999999986,
+        "ci_low": -2.71,
+        "ci_high": 1.9900000000000002,
+        "p": 0.7793689648384642,
+        "wilcoxon_statistic": 97.5,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.2508711089235718,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "p_holm": 1.0
+      },
+      {
+        "inference_batch": 1,
+        "metric": "betti1_err",
+        "delta": 0.8999999999999998,
+        "ci_low": 0.05999999999999998,
+        "ci_high": 1.7699999999999996,
+        "p": 0.042005520173912486,
+        "wilcoxon_statistic": 44.5,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.06334164928699498,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "p_holm": 0.16802208069564994
+      },
+      {
+        "inference_batch": 8,
+        "metric": "dice",
+        "delta": -0.008395338465650002,
+        "ci_low": -0.010195260350241249,
+        "ci_high": -0.006592702071605,
+        "p": 3.814697265625e-06,
+        "wilcoxon_statistic": 1.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.012351193476889717,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "p_holm": 2.288818359375e-05
+      },
+      {
+        "inference_batch": 8,
+        "metric": "cldice",
+        "delta": -0.01284861628915,
+        "ci_low": -0.014845830986416248,
+        "ci_high": -0.01081990798541875,
+        "p": 1.9073486328125e-06,
+        "wilcoxon_statistic": 0.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.017105778195652826,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "p_holm": 1.52587890625e-05
+      },
+      {
+        "inference_batch": 8,
+        "metric": "betti0_err",
+        "delta": -0.20999999999999996,
+        "ci_low": -3.0599999999999996,
+        "ci_high": 2.7600000000000002,
+        "p": 0.837146616667884,
+        "wilcoxon_statistic": 99.5,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": -0.00834077031618711,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "p_holm": 1.0
+      },
+      {
+        "inference_batch": 8,
+        "metric": "betti1_err",
+        "delta": 0.7799999999999999,
+        "ci_low": -0.12,
+        "ci_high": 1.7299999999999998,
+        "p": 0.11164224652688394,
+        "wilcoxon_statistic": 55.5,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.266536741946521,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds.",
+        "p_holm": 0.33492673958065183
+      }
+    ],
+    "batch1_reference": {
+      "summary": {
+        "dice": {
+          "mean": 0.8165636513073803,
+          "sample_sd": 0.0006907226419552409
+        },
+        "cldice": {
+          "mean": 0.8189724199151607,
+          "sample_sd": 0.003378981824675275
+        },
+        "betti0_err": {
+          "mean": 84.77,
+          "sample_sd": 4.332522360011544
+        },
+        "betti1_err": {
+          "mean": 29.51,
+          "sample_sd": 1.8799601059596989
+        },
+        "patch_betti0_err": {
+          "mean": 1.1800000000000002,
+          "sample_sd": 0.054089599733984986
+        },
+        "patch_betti1_err": {
+          "mean": 0.3173611111111111,
+          "sample_sd": 0.004527223892501849
+        }
+      },
+      "source_files": [
+        "runs/reused/clean_none_b3_lr0.0002_s0_ce/metrics.json",
+        "runs/reused/clean_none_b3_lr0.0002_s1_ce/metrics.json",
+        "runs/reused/clean_none_b3_lr0.0002_s2_ce/metrics.json",
+        "runs/reused/clean_none_b3_lr0.0002_s3_ce/metrics.json",
+        "runs/reused/clean_none_b3_lr0.0002_s4_ce/metrics.json"
+      ],
+      "parameters": 2094169,
+      "partial_flops": 7668782240,
+      "complexity_source": "runs/reused/clean_none_b3_lr0.0002_s0_ce/complexity.json"
+    },
+    "primary_E2_frozen_review": {
+      "dice_fix_minus_orig_per_seed": [
+        -0.007058252668533438,
+        -0.008104534684716613,
+        -0.011940406348111665,
+        -0.011270063096649907,
+        -0.004200735149703649
+      ],
+      "paired": {
+        "delta": -0.00851479838955,
+        "ci_low": -0.010289601902205002,
+        "ci_high": -0.006664490054105,
+        "p": 3.814697265625e-06,
+        "wilcoxon_statistic": 1.0,
+        "n_images": 20,
+        "n_seeds_a": 5,
+        "n_seeds_b": 5,
+        "paired_difference_skewness": 0.06980546040505453,
+        "assumption_note": "Matched images asserted; seed mean per image; Wilcoxon symmetric-difference location interpretation may be limited for skewed differences. Bootstrap CI resamples images, conditional on observed seeds."
+      }
+    },
+    "primary_metric_sha256": {
+      "runs/drive_dscnet_none_orig_b8_lr0.001_s0/metrics.json": "f4d3d2ae8f065792f18cfa73f298f6b2d13aa004ea7988e4f1d78634f9f6b767",
+      "runs/drive_dscnet_none_orig_b8_lr0.001_s1/metrics.json": "f129608bfd2289663c69f230565b571b59e566161efb2e9f31ae12ec4db57d36",
+      "runs/drive_dscnet_none_orig_b8_lr0.001_s2/metrics.json": "6f8692adad22839c786126be334ae5077fba2b7ed0b269b14d3ff667233446fa",
+      "runs/drive_dscnet_none_orig_b8_lr0.001_s3/metrics.json": "809354ae14db36c59bfdd150d06fa77dee893996e0c505451889257285783f20",
+      "runs/drive_dscnet_none_orig_b8_lr0.001_s4/metrics.json": "53971a0140f2c4f08e17d66ee9ffe78b681ffb3416cfacaec0b35f2761c046a2",
+      "runs/drive_dscnet_none_fix_b8_lr0.001_s0/metrics.json": "54434125a4437d0d44abdba1ae890948922d0a15b2e7775eb678cb447bc4092e",
+      "runs/drive_dscnet_none_fix_b8_lr0.001_s1/metrics.json": "3a52c325204f735f5b5d6883b7bcd8ecc66965fdba456b6cfe30d9828824d318",
+      "runs/drive_dscnet_none_fix_b8_lr0.001_s2/metrics.json": "568104d321842b87cfbefba6a0de905f8196617fd98b34c8c363c8c6e71ea0c5",
+      "runs/drive_dscnet_none_fix_b8_lr0.001_s3/metrics.json": "86382dda1eeff2427b1792aafeb929945ab2b75756cc58f0905b37160d1de63d",
+      "runs/drive_dscnet_none_fix_b8_lr0.001_s4/metrics.json": "94c8c363960ef46e13f4ded637a5b5dac737436386cac0a1039fde43126ef6bd"
+    },
+    "training_loss": [
+      {
+        "implementation": "orig",
+        "seeds": 5,
+        "final_epoch_loss_mean": 0.09392883758991957,
+        "final_epoch_loss_sample_sd": 0.004274369639938689,
+        "last50_mean_loss_mean": 0.09670323062408714,
+        "last50_mean_loss_sample_sd": 0.005280228996055052,
+        "last200_mean_loss_mean": 0.1038569675788749,
+        "last200_mean_loss_sample_sd": 0.005181671788064825,
+        "loss_at_selected_epoch_mean": 0.11102661537006497,
+        "loss_at_selected_epoch_sample_sd": 0.00205720174448489
+      },
+      {
+        "implementation": "fix",
+        "seeds": 5,
+        "final_epoch_loss_mean": 0.07184413857758046,
+        "final_epoch_loss_sample_sd": 0.0026902517594765626,
+        "last50_mean_loss_mean": 0.07411309365835042,
+        "last50_mean_loss_sample_sd": 0.0016643328952765336,
+        "last200_mean_loss_mean": 0.08032982379058376,
+        "last200_mean_loss_sample_sd": 0.001651225314684657,
+        "loss_at_selected_epoch_mean": 0.08410099493339658,
+        "loss_at_selected_epoch_sample_sd": 0.010962367113363422
+      }
+    ]
+  },
+  "power": {
+    "records": {
+      "drive": [
+        {
+          "axis": "seeds",
+          "seeds": 1,
+          "images": 20,
+          "power": 0.962,
+          "null_rejection_rate": 0.134,
+          "monte_carlo_se": 0.001911962342725401,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 2,
+          "images": 20,
+          "power": 0.9939,
+          "null_rejection_rate": 0.1492,
+          "monte_carlo_se": 0.0007786391975748456,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 3,
+          "images": 20,
+          "power": 0.9987,
+          "null_rejection_rate": 0.1542,
+          "monte_carlo_se": 0.00036032069049666963,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 4,
+          "images": 20,
+          "power": 0.9998,
+          "null_rejection_rate": 0.1595,
+          "monte_carlo_se": 0.0001414072133945005,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 5,
+          "images": 20,
+          "power": 0.9998,
+          "null_rejection_rate": 0.1635,
+          "monte_carlo_se": 0.0001414072133945005,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 6,
+          "images": 20,
+          "power": 1.0,
+          "null_rejection_rate": 0.1608,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 8,
+          "images": 20,
+          "power": 1.0,
+          "null_rejection_rate": 0.1547,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 10,
+          "images": 20,
+          "power": 1.0,
+          "null_rejection_rate": 0.1597,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 15,
+          "images": 20,
+          "power": 1.0,
+          "null_rejection_rate": 0.1575,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 20,
+          "images": 20,
+          "power": 1.0,
+          "null_rejection_rate": 0.158,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 30,
+          "images": 20,
+          "power": 1.0,
+          "null_rejection_rate": 0.1629,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 6,
+          "power": 0.9393,
+          "null_rejection_rate": 0.0579,
+          "monte_carlo_se": 0.00238779207637516,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 8,
+          "power": 0.9915,
+          "null_rejection_rate": 0.0785,
+          "monte_carlo_se": 0.0009180277773575238,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 10,
+          "power": 0.9958,
+          "null_rejection_rate": 0.1003,
+          "monte_carlo_se": 0.0006467116822819873,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 15,
+          "power": 0.9994,
+          "null_rejection_rate": 0.1276,
+          "monte_carlo_se": 0.0002448754785600316,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 20,
+          "power": 1.0,
+          "null_rejection_rate": 0.1556,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 30,
+          "power": 1.0,
+          "null_rejection_rate": 0.2158,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 40,
+          "power": 1.0,
+          "null_rejection_rate": 0.2612,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 60,
+          "power": 1.0,
+          "null_rejection_rate": 0.3408,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 80,
+          "power": 1.0,
+          "null_rejection_rate": 0.4099,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 100,
+          "power": 1.0,
+          "null_rejection_rate": 0.4612,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 150,
+          "power": 1.0,
+          "null_rejection_rate": 0.55,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 200,
+          "power": 1.0,
+          "null_rejection_rate": 0.5914,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        }
+      ],
+      "chase": [
+        {
+          "axis": "seeds",
+          "seeds": 1,
+          "images": 8,
+          "power": 0.8184,
+          "null_rejection_rate": 0.1371,
+          "monte_carlo_se": 0.0038551451334547706,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 2,
+          "images": 8,
+          "power": 0.9491,
+          "null_rejection_rate": 0.1627,
+          "monte_carlo_se": 0.002197935167378691,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 3,
+          "images": 8,
+          "power": 0.9838,
+          "null_rejection_rate": 0.1706,
+          "monte_carlo_se": 0.001262440493647126,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 4,
+          "images": 8,
+          "power": 0.9934,
+          "null_rejection_rate": 0.1701,
+          "monte_carlo_se": 0.0008097184695929845,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 5,
+          "images": 8,
+          "power": 0.997,
+          "null_rejection_rate": 0.1686,
+          "monte_carlo_se": 0.000546900356555013,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 6,
+          "images": 8,
+          "power": 0.9988,
+          "null_rejection_rate": 0.1795,
+          "monte_carlo_se": 0.0003462022530255947,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 8,
+          "images": 8,
+          "power": 0.9997,
+          "null_rejection_rate": 0.1827,
+          "monte_carlo_se": 0.00017317909804591517,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 10,
+          "images": 8,
+          "power": 1.0,
+          "null_rejection_rate": 0.1687,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 15,
+          "images": 8,
+          "power": 1.0,
+          "null_rejection_rate": 0.178,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 20,
+          "images": 8,
+          "power": 1.0,
+          "null_rejection_rate": 0.1864,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "seeds",
+          "seeds": 30,
+          "images": 8,
+          "power": 1.0,
+          "null_rejection_rate": 0.1746,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 6,
+          "power": 0.9894,
+          "null_rejection_rate": 0.1049,
+          "monte_carlo_se": 0.0010240917927607882,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 8,
+          "power": 0.9969,
+          "null_rejection_rate": 0.1809,
+          "monte_carlo_se": 0.0005559127629403729,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 10,
+          "power": 0.999,
+          "null_rejection_rate": 0.2362,
+          "monte_carlo_se": 0.0003160696125855823,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 15,
+          "power": 0.9994,
+          "null_rejection_rate": 0.3179,
+          "monte_carlo_se": 0.0002448754785600316,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 20,
+          "power": 0.9999,
+          "null_rejection_rate": 0.3981,
+          "monte_carlo_se": 9.999499987498824e-05,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 30,
+          "power": 1.0,
+          "null_rejection_rate": 0.4962,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 40,
+          "power": 0.9999,
+          "null_rejection_rate": 0.5673,
+          "monte_carlo_se": 9.999499987498824e-05,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 60,
+          "power": 1.0,
+          "null_rejection_rate": 0.6534,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 80,
+          "power": 1.0,
+          "null_rejection_rate": 0.7,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 100,
+          "power": 1.0,
+          "null_rejection_rate": 0.7442,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 150,
+          "power": 1.0,
+          "null_rejection_rate": 0.7884,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        },
+        {
+          "axis": "images",
+          "seeds": 5,
+          "images": 200,
+          "power": 1.0,
+          "null_rejection_rate": 0.8156,
+          "monte_carlo_se": 0.0,
+          "repetitions": 10000,
+          "dice_shift": 0.005
+        }
+      ]
+    },
+    "source": "tables/power_*.csv",
+    "interpretation": "Conditional sensitivity simulation from only five DSC seeds, independently resampled model groups +0.005 shift, whole seed rows then paired image bootstrap. Test-image extrapolation assumes exchangeability; null rejection calibration reported. Not post-hoc achieved power or guarantee.",
+    "grid_crossings": [
+      {
+        "dataset": "drive",
+        "axis": "seeds",
+        "minimum_tested_grid_value_crossing_80_percent": 1,
+        "fixed_other_axis": {
+          "images": 20
+        },
+        "raw_rejection_probability_at_crossing": 0.962,
+        "null_rejection_probability_at_crossing": 0.134,
+        "source": "tables/power_drive.csv",
+        "reliable_prospective_sample_size": null,
+        "interpretation": "Exploratory conditional grid crossing only. Empirical null rejection exceeds nominal5%; no calibrated80%-power sample-size recommendation is supported."
+      },
+      {
+        "dataset": "drive",
+        "axis": "images",
+        "minimum_tested_grid_value_crossing_80_percent": 6,
+        "fixed_other_axis": {
+          "seeds": 5
+        },
+        "raw_rejection_probability_at_crossing": 0.9393,
+        "null_rejection_probability_at_crossing": 0.0579,
+        "source": "tables/power_drive.csv",
+        "reliable_prospective_sample_size": null,
+        "interpretation": "Exploratory conditional grid crossing only. Empirical null rejection exceeds nominal5%; no calibrated80%-power sample-size recommendation is supported."
+      },
+      {
+        "dataset": "chase",
+        "axis": "seeds",
+        "minimum_tested_grid_value_crossing_80_percent": 1,
+        "fixed_other_axis": {
+          "images": 8
+        },
+        "raw_rejection_probability_at_crossing": 0.8184,
+        "null_rejection_probability_at_crossing": 0.1371,
+        "source": "tables/power_chase.csv",
+        "reliable_prospective_sample_size": null,
+        "interpretation": "Exploratory conditional grid crossing only. Empirical null rejection exceeds nominal5%; no calibrated80%-power sample-size recommendation is supported."
+      },
+      {
+        "dataset": "chase",
+        "axis": "images",
+        "minimum_tested_grid_value_crossing_80_percent": 6,
+        "fixed_other_axis": {
+          "seeds": 5
+        },
+        "raw_rejection_probability_at_crossing": 0.9894,
+        "null_rejection_probability_at_crossing": 0.1049,
+        "source": "tables/power_chase.csv",
+        "reliable_prospective_sample_size": null,
+        "interpretation": "Exploratory conditional grid crossing only. Empirical null rejection exceeds nominal5%; no calibrated80%-power sample-size recommendation is supported."
+      }
+    ],
+    "calibration_conclusion": "The reported conditional simulations fail nominal5% null calibration. Increasing resampled images repeats a finite empirical test set and can amplify pseudo-replication. Raw80% crossings are reported for transparency, but reliable required seeds/images are not established; no new calibration method or scientific settings were introduced."
+  },
+  "E2_posthoc": {
+    "label": "post-hoc supplement",
+    "plan": {
+      "label": "post-hoc supplement",
+      "original_E2_conclusion_unchanged": true,
+      "shuffle_gpu_tests": "runs/shuffle_gpu_test.log and shuffle_gpu_test_exit.json; exit 0, sampling/gradient/cache/batch1/RNG checks passed",
+      "configurations": [
+        {
+          "dataset": "drive",
+          "variant": "dscnet",
+          "kind": "none",
+          "lr": 0.002,
+          "seed": 0,
+          "bs": 8,
+          "roi_per_image": 8,
+          "dsconv": "fix",
+          "insert": "b2,b3,b4",
+          "study_role": "posthoc_lr"
+        },
+        {
+          "dataset": "drive",
+          "variant": "dscnet",
+          "kind": "none",
+          "lr": 0.0005,
+          "seed": 0,
+          "bs": 8,
+          "roi_per_image": 8,
+          "dsconv": "orig",
+          "insert": "b2,b3,b4",
+          "study_role": "posthoc_lr"
+        },
+        {
+          "dataset": "drive",
+          "variant": "dscnet",
+          "kind": "none",
+          "lr": 0.001,
+          "seed": 0,
+          "bs": 8,
+          "roi_per_image": 8,
+          "dsconv": "shuffle",
+          "insert": "b2,b3,b4",
+          "study_role": "mechanism_posthoc"
+        },
+        {
+          "dataset": "drive",
+          "variant": "dscnet",
+          "kind": "none",
+          "lr": 0.001,
+          "seed": 1,
+          "bs": 8,
+          "roi_per_image": 8,
+          "dsconv": "shuffle",
+          "insert": "b2,b3,b4",
+          "study_role": "mechanism_posthoc"
+        }
+      ]
+    },
+    "results": [
+      {
+        "label": "post-hoc supplement",
+        "study_role": "posthoc_lr",
+        "implementation": "fix",
+        "lr": 0.002,
+        "seed": 0,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 1,
+        "checkpoint": "validation_selected",
+        "epoch": 221,
+        "source": "runs/drive_dscnet_none_fix_b8_lr0.002_s0/metrics.json",
+        "dice": 0.8126573854170529,
+        "cldice": 0.812775553141068,
+        "betti0_err": 87.35,
+        "betti1_err": 30.95,
+        "patch_betti0_err": 1.2368055555555555,
+        "patch_betti1_err": 0.3166666666666667
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "posthoc_lr",
+        "implementation": "fix",
+        "lr": 0.002,
+        "seed": 0,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 8,
+        "checkpoint": "validation_selected",
+        "epoch": 221,
+        "source": "runs/drive_dscnet_none_fix_b8_lr0.002_s0/metrics_batch8.json",
+        "dice": 0.8126564162419225,
+        "cldice": 0.8127748115389754,
+        "betti0_err": 87.35,
+        "betti1_err": 30.95,
+        "patch_betti0_err": 1.2368055555555555,
+        "patch_betti1_err": 0.3166666666666667
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "posthoc_lr",
+        "implementation": "fix",
+        "lr": 0.002,
+        "seed": 0,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 1,
+        "checkpoint": "epoch400",
+        "epoch": 400,
+        "source": "runs/drive_dscnet_none_fix_b8_lr0.002_s0/last_metrics.json",
+        "dice": 0.8040815562680714,
+        "cldice": 0.7996597625789131,
+        "betti0_err": 108.2,
+        "betti1_err": 30.7,
+        "patch_betti0_err": 1.495138888888889,
+        "patch_betti1_err": 0.3104166666666667
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "posthoc_lr",
+        "implementation": "orig",
+        "lr": 0.0005,
+        "seed": 0,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 1,
+        "checkpoint": "validation_selected",
+        "epoch": 221,
+        "source": "runs/drive_dscnet_none_orig_b8_lr0.0005_s0/metrics.json",
+        "dice": 0.8122706623654425,
+        "cldice": 0.8134029740071866,
+        "betti0_err": 107.05,
+        "betti1_err": 28.7,
+        "patch_betti0_err": 1.39375,
+        "patch_betti1_err": 0.3277777777777778
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "posthoc_lr",
+        "implementation": "orig",
+        "lr": 0.0005,
+        "seed": 0,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 8,
+        "checkpoint": "validation_selected",
+        "epoch": 221,
+        "source": "runs/drive_dscnet_none_orig_b8_lr0.0005_s0/metrics_batch8.json",
+        "dice": 0.8124698262124392,
+        "cldice": 0.8136656785482815,
+        "betti0_err": 105.1,
+        "betti1_err": 28.35,
+        "patch_betti0_err": 1.3465277777777778,
+        "patch_betti1_err": 0.3395833333333333
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "posthoc_lr",
+        "implementation": "orig",
+        "lr": 0.0005,
+        "seed": 0,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 1,
+        "checkpoint": "epoch400",
+        "epoch": 400,
+        "source": "runs/drive_dscnet_none_orig_b8_lr0.0005_s0/last_metrics.json",
+        "dice": 0.8099738191467136,
+        "cldice": 0.8116231726328046,
+        "betti0_err": 91.3,
+        "betti1_err": 28.0,
+        "patch_betti0_err": 1.2756944444444445,
+        "patch_betti1_err": 0.3215277777777778
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "mechanism_posthoc",
+        "implementation": "shuffle",
+        "lr": 0.001,
+        "seed": 0,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 1,
+        "checkpoint": "validation_selected",
+        "epoch": 246,
+        "source": "runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/metrics.json",
+        "dice": 0.8143729891990077,
+        "cldice": 0.8159264098550786,
+        "betti0_err": 78.4,
+        "betti1_err": 28.3,
+        "patch_betti0_err": 1.0923611111111111,
+        "patch_betti1_err": 0.3194444444444445
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "mechanism_posthoc",
+        "implementation": "shuffle",
+        "lr": 0.001,
+        "seed": 0,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 8,
+        "checkpoint": "validation_selected",
+        "epoch": 246,
+        "source": "runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/metrics_batch8.json",
+        "dice": 0.8144547891953033,
+        "cldice": 0.81628251505172,
+        "betti0_err": 78.95,
+        "betti1_err": 28.8,
+        "patch_betti0_err": 1.0979166666666667,
+        "patch_betti1_err": 0.3152777777777778
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "mechanism_posthoc",
+        "implementation": "shuffle",
+        "lr": 0.001,
+        "seed": 0,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 1,
+        "checkpoint": "epoch400",
+        "epoch": 400,
+        "source": "runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/last_metrics.json",
+        "dice": 0.8036449810344057,
+        "cldice": 0.800437051230489,
+        "betti0_err": 108.0,
+        "betti1_err": 32.65,
+        "patch_betti0_err": 1.4513888888888888,
+        "patch_betti1_err": 0.32638888888888884
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "mechanism_posthoc",
+        "implementation": "shuffle",
+        "lr": 0.001,
+        "seed": 1,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 1,
+        "checkpoint": "validation_selected",
+        "epoch": 231,
+        "source": "runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/metrics.json",
+        "dice": 0.8143850593236021,
+        "cldice": 0.812496444021059,
+        "betti0_err": 105.7,
+        "betti1_err": 31.45,
+        "patch_betti0_err": 1.3625,
+        "patch_betti1_err": 0.3097222222222222
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "mechanism_posthoc",
+        "implementation": "shuffle",
+        "lr": 0.001,
+        "seed": 1,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 8,
+        "checkpoint": "validation_selected",
+        "epoch": 231,
+        "source": "runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/metrics_batch8.json",
+        "dice": 0.8138312923379912,
+        "cldice": 0.8120298205185387,
+        "betti0_err": 107.5,
+        "betti1_err": 32.25,
+        "patch_betti0_err": 1.3923611111111112,
+        "patch_betti1_err": 0.3201388888888889
+      },
+      {
+        "label": "post-hoc supplement",
+        "study_role": "mechanism_posthoc",
+        "implementation": "shuffle",
+        "lr": 0.001,
+        "seed": 1,
+        "training_batch": 8,
+        "roi_per_image": 8,
+        "inference_batch": 1,
+        "checkpoint": "epoch400",
+        "epoch": 400,
+        "source": "runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/last_metrics.json",
+        "dice": 0.8071589270792657,
+        "cldice": 0.8077895219414135,
+        "betti0_err": 103.15,
+        "betti1_err": 31.5,
+        "patch_betti0_err": 1.3805555555555558,
+        "patch_betti1_err": 0.32013888888888886
+      }
+    ],
+    "source_sha256": {
+      "runs/drive_dscnet_none_fix_b8_lr0.002_s0/config.json": "67b01d9f4e4d0295c106b9ebbdca8abf7b6ac63a96f6e4a7b926488a04b47753",
+      "runs/drive_dscnet_none_fix_b8_lr0.002_s0/metrics.json": "6c40a2ad51da8852176be0075f8bb58a78e450b5e66e65bb56452ca00853fcd2",
+      "runs/drive_dscnet_none_fix_b8_lr0.002_s0/metrics_batch8.json": "140b7621331fc04d404dad486f79b6ebfc74ffd46d85bc71c17d6b0e68f37af2",
+      "runs/drive_dscnet_none_fix_b8_lr0.002_s0/last_metrics.json": "35db8187f4f5bf6b72c9ba6615a01ddd64316d8d4f3c2ecc4cdf3b1f93bbcea3",
+      "runs/drive_dscnet_none_fix_b8_lr0.002_s0/epochs.jsonl": "9ae53a9c98d0cbde407ce3c6572a0a1b3c215c80f0550af374cd48d128cc40f4",
+      "runs/drive_dscnet_none_fix_b8_lr0.002_s0/diag_test.jsonl": "140b65a66dafd8d5d837dab17e3d22b1a258d9eaa1ad1c016399cbcff87b557e",
+      "runs/drive_dscnet_none_orig_b8_lr0.0005_s0/config.json": "ae8dadd5e5abd63119bf5a51043d21a1465356ed7a61d24b8f0baabbc7e8840c",
+      "runs/drive_dscnet_none_orig_b8_lr0.0005_s0/metrics.json": "4a2a14e3726ab8b11392f4f1a567d3b73d3e910d91a5bd7c7b4401601e314df9",
+      "runs/drive_dscnet_none_orig_b8_lr0.0005_s0/metrics_batch8.json": "a88c488ae0d96409adb1876eec89ded46f125ee1ec05fcd009e060357f8576df",
+      "runs/drive_dscnet_none_orig_b8_lr0.0005_s0/last_metrics.json": "fcb619fcf6e73103dda0716c2deeb9179a6960cd1b8853f4b4d5c52973a969c8",
+      "runs/drive_dscnet_none_orig_b8_lr0.0005_s0/epochs.jsonl": "e1cb5180891970aad697e8d3e2329f2b4fc0b59f227d0bd333de94c88ea93c38",
+      "runs/drive_dscnet_none_orig_b8_lr0.0005_s0/diag_test.jsonl": "187772a14e997f176e688330655479378f85048ef3552039331c9630462f7595",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/config.json": "6885ded025b09e5311ca48812453cd40dab8192df9910df2248215f2cf9b18ca",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/metrics.json": "6c9a715191641efe77a339a836d8f5a78e58fb81be233d2772de850f33985528",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/metrics_batch8.json": "190567e71d21099b8116e404c7c625ac94e051b09813831a2a65b97ef72a2957",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/last_metrics.json": "48fb78142352d80579d938aca5e562563d543793e221a0972a68d6f1b3b7a2a8",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/epochs.jsonl": "7039bf1bfc518b32a291c386d7b7a797ce7cc07e0ff3a3023996c349eaf3fbcc",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/diag_test.jsonl": "4a58c2064c85e9f5aea87407b2b81be54ed1fec534a468d01720ca59a33ce1cf",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/config.json": "6867078fdced764e6ef02e083ac423f402ed4548bc86ef459c24ae35ce2df237",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/metrics.json": "e44f716f4733dd8f1d50e3c8c41e885f79298a1b6ddba48db7c9f0caade6da2e",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/metrics_batch8.json": "253893913958fdef97b01a2ffba7bb3e8fc1217700604821774ca07404524c04",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/last_metrics.json": "dc6d28e30a095eb32cf1a098c4c59eabf648680cc9517c44cfed21ca6408730e",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/epochs.jsonl": "b09f44ec073f3d10193b04839079cc5adcaebb81380073b55b2352989a408326",
+      "runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/diag_test.jsonl": "792b98581c5e45b3133f70e2c7ecc47e7f2e3ff8b621141ad97b1e4d4311e152"
+    },
+    "excluded_from_primary_E2_and_E3": true
+  }
+}

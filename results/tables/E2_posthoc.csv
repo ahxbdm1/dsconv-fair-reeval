@@ -1,0 +1,13 @@
+label,study_role,implementation,lr,seed,training_batch,roi_per_image,inference_batch,checkpoint,epoch,source,dice,cldice,betti0_err,betti1_err,patch_betti0_err,patch_betti1_err
+事后补充,posthoc_lr,fix,0.002,0,8,8,1,validation_selected,221,runs/drive_dscnet_none_fix_b8_lr0.002_s0/metrics.json,0.8126573854170529,0.812775553141068,87.35,30.95,1.2368055555555555,0.3166666666666667
+事后补充,posthoc_lr,fix,0.002,0,8,8,8,validation_selected,221,runs/drive_dscnet_none_fix_b8_lr0.002_s0/metrics_batch8.json,0.8126564162419225,0.8127748115389754,87.35,30.95,1.2368055555555555,0.3166666666666667
+事后补充,posthoc_lr,fix,0.002,0,8,8,1,epoch400,400,runs/drive_dscnet_none_fix_b8_lr0.002_s0/last_metrics.json,0.8040815562680714,0.7996597625789131,108.2,30.7,1.495138888888889,0.3104166666666667
+事后补充,posthoc_lr,orig,0.0005,0,8,8,1,validation_selected,221,runs/drive_dscnet_none_orig_b8_lr0.0005_s0/metrics.json,0.8122706623654425,0.8134029740071866,107.05,28.7,1.39375,0.3277777777777778
+事后补充,posthoc_lr,orig,0.0005,0,8,8,8,validation_selected,221,runs/drive_dscnet_none_orig_b8_lr0.0005_s0/metrics_batch8.json,0.8124698262124392,0.8136656785482815,105.1,28.35,1.3465277777777778,0.3395833333333333
+事后补充,posthoc_lr,orig,0.0005,0,8,8,1,epoch400,400,runs/drive_dscnet_none_orig_b8_lr0.0005_s0/last_metrics.json,0.8099738191467136,0.8116231726328046,91.3,28.0,1.2756944444444445,0.3215277777777778
+事后补充,mechanism_posthoc,shuffle,0.001,0,8,8,1,validation_selected,246,runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/metrics.json,0.8143729891990077,0.8159264098550786,78.4,28.3,1.0923611111111111,0.3194444444444445
+事后补充,mechanism_posthoc,shuffle,0.001,0,8,8,8,validation_selected,246,runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/metrics_batch8.json,0.8144547891953033,0.81628251505172,78.95,28.8,1.0979166666666667,0.3152777777777778
+事后补充,mechanism_posthoc,shuffle,0.001,0,8,8,1,epoch400,400,runs/drive_dscnet_none_shuffle_b8_lr0.001_s0/last_metrics.json,0.8036449810344057,0.800437051230489,108.0,32.65,1.4513888888888888,0.32638888888888884
+事后补充,mechanism_posthoc,shuffle,0.001,1,8,8,1,validation_selected,231,runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/metrics.json,0.8143850593236021,0.812496444021059,105.7,31.45,1.3625,0.3097222222222222
+事后补充,mechanism_posthoc,shuffle,0.001,1,8,8,8,validation_selected,231,runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/metrics_batch8.json,0.8138312923379912,0.8120298205185387,107.5,32.25,1.3923611111111112,0.3201388888888889
+事后补充,mechanism_posthoc,shuffle,0.001,1,8,8,1,epoch400,400,runs/drive_dscnet_none_shuffle_b8_lr0.001_s1/last_metrics.json,0.8071589270792657,0.8077895219414135,103.15,31.5,1.3805555555555558,0.32013888888888886

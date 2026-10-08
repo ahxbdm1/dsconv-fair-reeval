@@ -1,0 +1,56 @@
+{
+  "owner": "Codex",
+  "torch": "2.8.0+cpu",
+  "source_sha256": "141871d6f7c07fc24b43b1528758a164799b31ebc291d2a339199eaee97a413d",
+  "upstream_commit": "0e35b2b6ea748a5e8ce7557ea3e580b9951471d6",
+  "batches": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "shape_per_sample": [
+    8,
+    40,
+    36
+  ],
+  "out_channels": 16,
+  "kernel_size": 9,
+  "morphs": [
+    0,
+    1
+  ],
+  "model_mode": "eval; random weights, frozen BatchNorm statistics",
+  "input": "independent standard normal synthetic feature maps",
+  "relative_error": "L2(original_batch - singleton_reference) / L2(singleton_reference), per sample, then batch mean",
+  "controls": [
+    "fixed same weights",
+    "identical inputs in every batch slot",
+    "batch permutation",
+    "fixed-coordinate gather-path gradient"
+  ],
+  "scientific_scope": "operator mechanism characterization, not dataset prevalence or trained-model performance"
+}

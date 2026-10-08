@@ -1,0 +1,17 @@
+{
+  "batch": 8,
+  "roi": 96,
+  "grad_rel_err": 0.4582832157611847,
+  "grad_cosine": 0.9059513807296753,
+  "train_mode_output_rel_err_per_sample": [
+    0.024146929383277893,
+    1.3083645105361938,
+    1.7346621751785278,
+    1.3026670217514038,
+    2.028451681137085,
+    1.5994746685028076,
+    1.685082197189331,
+    1.3845434188842773
+  ],
+  "note": "train mode (BatchNorm in offset branch uses batch statistics in both implementations); dummy target"
+}

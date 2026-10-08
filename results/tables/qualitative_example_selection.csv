@@ -1,0 +1,3 @@
+dataset,image,seed,center_y,center_x,rule
+drive,14.nii.gz,0,96,416,"median DSC seed0 test Dice image; ROI maximizes missed GT skeleton count on32px grid; illustration, not unbiased performance evidence"
+chase,Image_11L.nii.gz,0,640,256,"median DSC seed0 test Dice image; ROI maximizes missed GT skeleton count on32px grid; illustration, not unbiased performance evidence"

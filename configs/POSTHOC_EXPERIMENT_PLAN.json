@@ -1,0 +1,54 @@
+{
+  "label": "post-hoc supplement",
+  "original_E2_conclusion_unchanged": true,
+  "configurations": [
+    {
+      "dataset": "drive",
+      "variant": "dscnet",
+      "kind": "none",
+      "lr": 0.002,
+      "seed": 0,
+      "bs": 8,
+      "roi_per_image": 8,
+      "dsconv": "fix",
+      "insert": "b2,b3,b4",
+      "study_role": "posthoc_lr"
+    },
+    {
+      "dataset": "drive",
+      "variant": "dscnet",
+      "kind": "none",
+      "lr": 0.0005,
+      "seed": 0,
+      "bs": 8,
+      "roi_per_image": 8,
+      "dsconv": "orig",
+      "insert": "b2,b3,b4",
+      "study_role": "posthoc_lr"
+    },
+    {
+      "dataset": "drive",
+      "variant": "dscnet",
+      "kind": "none",
+      "lr": 0.001,
+      "seed": 0,
+      "bs": 8,
+      "roi_per_image": 8,
+      "dsconv": "shuffle",
+      "insert": "b2,b3,b4",
+      "study_role": "mechanism_posthoc"
+    },
+    {
+      "dataset": "drive",
+      "variant": "dscnet",
+      "kind": "none",
+      "lr": 0.001,
+      "seed": 1,
+      "bs": 8,
+      "roi_per_image": 8,
+      "dsconv": "shuffle",
+      "insert": "b2,b3,b4",
+      "study_role": "mechanism_posthoc"
+    }
+  ]
+}

@@ -1,0 +1,806 @@
+{
+  "owner": "Codex local supplement",
+  "completed_epoch": 1791385464.6779966,
+  "E1": {
+    "complete": true,
+    "records": 1240,
+    "plan": {
+      "owner": "Codex",
+      "torch": "2.8.0+cpu",
+      "source_sha256": "141871d6f7c07fc24b43b1528758a164799b31ebc291d2a339199eaee97a413d",
+      "upstream_commit": "0e35b2b6ea748a5e8ce7557ea3e580b9951471d6",
+      "batches": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "shape_per_sample": [
+        8,
+        40,
+        36
+      ],
+      "out_channels": 16,
+      "kernel_size": 9,
+      "morphs": [
+        0,
+        1
+      ],
+      "model_mode": "eval; random weights, frozen BatchNorm statistics",
+      "input": "independent standard normal synthetic feature maps",
+      "relative_error": "L2(original_batch - singleton_reference) / L2(singleton_reference), per sample, then batch mean",
+      "controls": [
+        "fixed same weights",
+        "identical inputs in every batch slot",
+        "batch permutation",
+        "fixed-coordinate gather-path gradient"
+      ],
+      "scientific_scope": "operator mechanism characterization, not dataset prevalence or trained-model performance"
+    },
+    "batch_summary": [
+      {
+        "morph": 0,
+        "batch": 1,
+        "n_seeds": 20,
+        "original_batch_mean_relative_l2": 0.0,
+        "original_between_seed_sd": 0.0,
+        "original_nonfirst_relative_l2": 0.0,
+        "fixed_batch_mean_relative_l2": 0.0,
+        "fixed_between_seed_sd": 0.0
+      },
+      {
+        "morph": 0,
+        "batch": 2,
+        "n_seeds": 20,
+        "original_batch_mean_relative_l2": 0.5809133966982003,
+        "original_between_seed_sd": 0.002953395072701527,
+        "original_nonfirst_relative_l2": 1.1618262231349945,
+        "fixed_batch_mean_relative_l2": 5.744097038018481e-07,
+        "fixed_between_seed_sd": 2.2652866711275607e-08
+      },
+      {
+        "morph": 0,
+        "batch": 4,
+        "n_seeds": 20,
+        "original_batch_mean_relative_l2": 0.8705240519687983,
+        "original_between_seed_sd": 0.0025794153224941124,
+        "original_nonfirst_relative_l2": 1.160698542992274,
+        "fixed_batch_mean_relative_l2": 5.8986109934267e-07,
+        "fixed_between_seed_sd": 1.6895261292327422e-08
+      },
+      {
+        "morph": 0,
+        "batch": 8,
+        "n_seeds": 20,
+        "original_batch_mean_relative_l2": 1.0158277452908682,
+        "original_between_seed_sd": 0.001627480213044989,
+        "original_nonfirst_relative_l2": 1.1609459119183676,
+        "fixed_batch_mean_relative_l2": 5.892205972912734e-07,
+        "fixed_between_seed_sd": 1.2270039754379842e-08
+      },
+      {
+        "morph": 0,
+        "batch": 16,
+        "n_seeds": 20,
+        "original_batch_mean_relative_l2": 1.087968242214259,
+        "original_between_seed_sd": 0.0017651078041203533,
+        "original_nonfirst_relative_l2": 1.1604994197686513,
+        "fixed_batch_mean_relative_l2": 5.885549153816782e-07,
+        "fixed_between_seed_sd": 9.187608028348305e-09
+      },
+      {
+        "morph": 1,
+        "batch": 1,
+        "n_seeds": 20,
+        "original_batch_mean_relative_l2": 0.0,
+        "original_between_seed_sd": 0.0,
+        "original_nonfirst_relative_l2": 0.0,
+        "fixed_batch_mean_relative_l2": 0.0,
+        "fixed_between_seed_sd": 0.0
+      },
+      {
+        "morph": 1,
+        "batch": 2,
+        "n_seeds": 20,
+        "original_batch_mean_relative_l2": 0.5797336911080933,
+        "original_between_seed_sd": 0.004115772397195126,
+        "original_nonfirst_relative_l2": 1.1594668447971344,
+        "fixed_batch_mean_relative_l2": 5.344821801145371e-07,
+        "fixed_between_seed_sd": 1.6951031441666286e-08
+      },
+      {
+        "morph": 1,
+        "batch": 4,
+        "n_seeds": 20,
+        "original_batch_mean_relative_l2": 0.8697547082907107,
+        "original_between_seed_sd": 0.0033099669935552503,
+        "original_nonfirst_relative_l2": 1.1596727609634399,
+        "fixed_batch_mean_relative_l2": 5.558404232886005e-07,
+        "fixed_between_seed_sd": 1.2322017831564726e-08
+      },
+      {
+        "morph": 1,
+        "batch": 8,
+        "n_seeds": 20,
+        "original_batch_mean_relative_l2": 1.0158841873112394,
+        "original_between_seed_sd": 0.003105990608147758,
+        "original_nonfirst_relative_l2": 1.1610104211739132,
+        "fixed_batch_mean_relative_l2": 5.523134962714948e-07,
+        "fixed_between_seed_sd": 9.402996975347725e-09
+      },
+      {
+        "morph": 1,
+        "batch": 16,
+        "n_seeds": 20,
+        "original_batch_mean_relative_l2": 1.0883149595262147,
+        "original_between_seed_sd": 0.0032875010565339333,
+        "original_nonfirst_relative_l2": 1.1608692534764606,
+        "fixed_batch_mean_relative_l2": 5.531207807329963e-07,
+        "fixed_between_seed_sd": 8.33553986019882e-09
+      }
+    ],
+    "gradient_rows": [
+      {
+        "morph": 0,
+        "implementation": "original",
+        "loss_sample": 1,
+        "input_sample": 0,
+        "gradient_l2": 0.13909971714019775
+      },
+      {
+        "morph": 0,
+        "implementation": "original",
+        "loss_sample": 1,
+        "input_sample": 1,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 0,
+        "implementation": "original",
+        "loss_sample": 1,
+        "input_sample": 2,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 0,
+        "implementation": "original",
+        "loss_sample": 1,
+        "input_sample": 3,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 0,
+        "implementation": "fixed",
+        "loss_sample": 1,
+        "input_sample": 0,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 0,
+        "implementation": "fixed",
+        "loss_sample": 1,
+        "input_sample": 1,
+        "gradient_l2": 0.14549259841442108
+      },
+      {
+        "morph": 0,
+        "implementation": "fixed",
+        "loss_sample": 1,
+        "input_sample": 2,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 0,
+        "implementation": "fixed",
+        "loss_sample": 1,
+        "input_sample": 3,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 1,
+        "implementation": "original",
+        "loss_sample": 1,
+        "input_sample": 0,
+        "gradient_l2": 0.14206373691558838
+      },
+      {
+        "morph": 1,
+        "implementation": "original",
+        "loss_sample": 1,
+        "input_sample": 1,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 1,
+        "implementation": "original",
+        "loss_sample": 1,
+        "input_sample": 2,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 1,
+        "implementation": "original",
+        "loss_sample": 1,
+        "input_sample": 3,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 1,
+        "implementation": "fixed",
+        "loss_sample": 1,
+        "input_sample": 0,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 1,
+        "implementation": "fixed",
+        "loss_sample": 1,
+        "input_sample": 1,
+        "gradient_l2": 0.1388683021068573
+      },
+      {
+        "morph": 1,
+        "implementation": "fixed",
+        "loss_sample": 1,
+        "input_sample": 2,
+        "gradient_l2": 0.0
+      },
+      {
+        "morph": 1,
+        "implementation": "fixed",
+        "loss_sample": 1,
+        "input_sample": 3,
+        "gradient_l2": 0.0
+      }
+    ],
+    "constant_feature_example": {
+      "morph0_original": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "morph0_fixed": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "morph1_original": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "morph1_fixed": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ]
+    },
+    "max_fixed_batch_dependence": 1.2636184692382812e-05,
+    "max_original_permutation_error": 5.1380486488342285,
+    "max_fixed_permutation_error": 0.0,
+    "max_identical_input_error": 1.2636184692382812e-05,
+    "batch1_bitwise_identity": true,
+    "upstream_lines": {
+      "batch_base": [
+        289,
+        290
+      ],
+      "cancellation": [
+        293,
+        294,
+        297,
+        298
+      ]
+    },
+    "completed_epoch": 1791383263.5831907,
+    "public_source_provenance": {
+      "repository": "YaoleiQi/DSCNet",
+      "commit": "0e35b2b6ea748a5e8ce7557ea3e580b9951471d6",
+      "path": "DSCNet_2D_opensource/Code/DRIVE/DSCNet/S3_DSConv.py",
+      "public_sha256": "141871d6f7c07fc24b43b1528758a164799b31ebc291d2a339199eaee97a413d",
+      "git_blob_sha": "4c0a0fc46fbd5e9f49f63b8ec7cc080eb13f1a6d",
+      "normalized_text_matches_stage2_source": true,
+      "note": "Line-number metadata corrected by source enumeration; all numeric records and original pre-execution plan retained. A null stage2 comparison means its separate archive was not available in this checkout."
+    }
+  },
+  "E6": {
+    "counts": {
+      "protocol_repositories_reviewed": 14,
+      "eligible_vessel_training_repositories": 12,
+      "excluded_protocol_scopes": 2,
+      "fully_assessed_python_port_repositories": 11,
+      "ports_with_specific_bug_CPU_reproduced": 4,
+      "ports_without_specific_cancellation_static_only": 7,
+      "port_runtime_records": 16,
+      "bug_gather_unique_AST_fingerprints": 2,
+      "source_files_SHA256_verified": 1261,
+      "public_candidate_repositories_attempted": 42,
+      "checkpoint_classification_eligible": {
+        "test_metric_best": 2,
+        "periodic_epoch": 3,
+        "last_overwrite": 1,
+        "training_loss_best": 2,
+        "validation_loss_best": 3,
+        "validation_metric_best": 1
+      }
+    },
+    "protocol": [
+      {
+        "repository": "YaoleiQi/DSCNet",
+        "commit": "0e35b2b6ea748a5e8ce7557ea3e580b9951471d6",
+        "audited_scope": "Original 2D DRIVE S0/S3 training path",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "test_metric_best",
+        "validation_origin": "Image_Te / Label_Te held-out evaluation paths; no separate validation in this branch",
+        "test_during_training": "used_to_select_checkpoint",
+        "seed_disclosure": "No explicit seed setting in reviewed S0/S3 path",
+        "learning_rate_disclosure": "S0 default lr=1e-4, batch=1",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Te metrics are evaluated during training and maximize saved checkpoint. This describes public code; actual published execution is not independently verified.",
+        "evidence_ids": "E001;E002;E003;E004;E070"
+      },
+      {
+        "repository": "SHI-Labs/SGL-Retinal-Vessel-Segmentation",
+        "commit": "e74eaeac27ce2a483da7717645eb0f6e8e708acd",
+        "audited_scope": "Documented run_train.sh DRIVE/CHASE commands and trainer",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "test_metric_best",
+        "validation_origin": "Documented --data_test DRIVET / CHASET loaders",
+        "test_during_training": "used_to_select_checkpoint",
+        "seed_disclosure": "Single seed CLI default; torch seed set in main",
+        "learning_rate_disclosure": "CLI/default config only; no complete search protocol established",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Generic data_test default differs from documented shell commands; audit follows the latter. Dataset label does not by itself establish actual author data contents.",
+        "evidence_ids": "E005;E006;E007;E008;E009;E010;E011;E012;E074;E075"
+      },
+      {
+        "repository": "lseventeen/FR-UNet",
+        "commit": "1856bc206055fdfccde184d0ebf9ac8c3207387d",
+        "audited_scope": "train.py default and optional --val path",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "periodic_epoch",
+        "validation_origin": "Default no validation; optional 90/10 split of preprocessed training patch files",
+        "test_during_training": "not_in_checkpoint_condition_in_reviewed_path",
+        "seed_disclosure": "seed_torch called; helper default42",
+        "learning_rate_disclosure": "config.yaml lr=1e-4",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Optional patch split does not prove independent original images. Periodic saves do not establish final checkpoint reporting choice.",
+        "evidence_ids": "E013;E014;E015;E016;E017;E018;E071"
+      },
+      {
+        "repository": "clguo/SA-UNet",
+        "commit": "c0f9688e45f0beaa139829d20e4ac785f69dbc2d",
+        "audited_scope": "Train_drive.py",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "last_overwrite",
+        "validation_origin": "Separate DRIVE/validate directory; original-image provenance unknown",
+        "test_during_training": "not_in_checkpoint_condition_in_reviewed_path",
+        "seed_disclosure": "No explicit global seed established from reviewed training file",
+        "learning_rate_disclosure": "Training comments describe manual LR stages; no independent search established",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "monitor=val_accuracy does not select best when save_best_only=False. File is overwritten each epoch.",
+        "evidence_ids": "E019;E020;E021"
+      },
+      {
+        "repository": "conscienceli/IterNet",
+        "commit": "d5dd06e9c484f5788c5754524e1950413dcd563b",
+        "audited_scope": "train.py and training generator",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "training_loss_best",
+        "validation_origin": "No validation_data in reviewed fit_generator; generators use training data",
+        "test_during_training": "not_in_checkpoint_condition_in_reviewed_path",
+        "seed_disclosure": "No explicit global seed established from reviewed path",
+        "learning_rate_disclosure": "Model/optimizer configuration only; independent tuning unknown",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Training-loss checkpoint is not a validation or test criterion.",
+        "evidence_ids": "E022;E023;E024"
+      },
+      {
+        "repository": "juntang-zhuang/LadderNet",
+        "commit": "cc440fdf799dc69426e9f8e25a071ae62e9aee08",
+        "audited_scope": "src/retinaNN_training.py",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "validation_loss_best",
+        "validation_origin": "Random held-out patches from pooled training patches",
+        "test_during_training": "not_in_checkpoint_condition_in_reviewed_path",
+        "seed_disclosure": "Python random.sample split; global seeding not established in this file",
+        "learning_rate_disclosure": "Fixed staged learning-rate schedule in file",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Function named test iterates val_loader; it is not evidence of benchmark-test checkpoint selection. Patch split may share source images.",
+        "evidence_ids": "E025;E026;E027;E072"
+      },
+      {
+        "repository": "Guzaiwang/CE-Net",
+        "commit": "d7f0865d70d3ba5bc3c17e7c76f75ae52d2d36b7",
+        "audited_scope": "Current src default ORIGA_OD optic-disc branch",
+        "eligible_vessel_training": false,
+        "checkpoint_selection": "validation_loss_best",
+        "validation_origin": "Dataset Set_A train / Set_B val; optic-disc scope",
+        "test_during_training": "unknown_for_vessel_pipeline",
+        "seed_disclosure": "opts.py seed default317",
+        "learning_rate_disclosure": "Config/opts only",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Excluded from vessel-training denominator: current audited default is optic-disc; README mentioning vessels does not establish a current vessel training protocol.",
+        "evidence_ids": "E028;E029;E030"
+      },
+      {
+        "repository": "orobix/retina-unet",
+        "commit": "f6ff63bb39409942fd3aaf6907dbce74ca143207",
+        "audited_scope": "src/retinaNN_training.py",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "validation_loss_best",
+        "validation_origin": "Keras validation_split=.1 on extracted training patches",
+        "test_during_training": "not_in_checkpoint_condition_in_reviewed_path",
+        "seed_disclosure": "No explicit complete seed setting established from reviewed path",
+        "learning_rate_disclosure": "Optimizer configuration only; independent tuning unknown",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Also saves last weights. Patch-level validation does not establish image/subject independence.",
+        "evidence_ids": "E031;E032;E033"
+      },
+      {
+        "repository": "DeepTrial/Retina-VesselNet",
+        "commit": "1a2dbf9064fbf2f03c028a392efb4abf6bd5b575",
+        "audited_scope": "py-network training/dataloader/cfg",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "validation_loss_best",
+        "validation_origin": "70/30 split of TRAIN image paths before patch creation",
+        "test_during_training": "not_in_checkpoint_condition_in_reviewed_path",
+        "seed_disclosure": "Patch shuffle random_state0; image random.sample global seed not established",
+        "learning_rate_disclosure": "cfg init_lr=.0003",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Image holdout is supported; patient-level independence is not established.",
+        "evidence_ids": "E034;E035;E036;E073"
+      },
+      {
+        "repository": "RanSuLab/DUNet-retinal-vessel-detection",
+        "commit": "544e9567efbc2a53fa19f8e99f0a3ab002b73665",
+        "audited_scope": "pytorch_train.py and utils/Data_loader.py",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "periodic_epoch",
+        "validation_origin": "90/10 partition of training patch arrays; evaluation called test",
+        "test_during_training": "not_in_checkpoint_condition_in_reviewed_path",
+        "seed_disclosure": "torch.manual_seed(0) in training file",
+        "learning_rate_disclosure": "ReduceLROnPlateau driven by held-out patch loss",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Test function/loader label is not benchmark test. Patch validation also drives scheduler; periodic checkpoint choice outside code unknown.",
+        "evidence_ids": "E037;E038;E039;E040;E041"
+      },
+      {
+        "repository": "berenslab/Retinal-Vessel-Segmentation-Benchmark",
+        "commit": "3140a0a4b71dfa01e11bc02916edd4479ad4362d",
+        "audited_scope": "train_baseline.py/trainer.py DRIVE/CHASE branches",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "periodic_epoch",
+        "validation_origin": "Separate train/validate directories; original split provenance unknown",
+        "test_during_training": "not_in_checkpoint_condition_in_reviewed_path",
+        "seed_disclosure": "seed_torch called; helper default42",
+        "learning_rate_disclosure": "Dataset configs specify optimizer settings; independent search unknown",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Validation monitoring exists, but checkpoint is periodic. Comment requesting best-model adjustment does not implement it.",
+        "evidence_ids": "E042;E043;E044;E045"
+      },
+      {
+        "repository": "onurboyar/Retinal-Vessel-Segmentation",
+        "commit": "1f573bd3ac7f9a00bf56156a0e7781b568925311",
+        "audited_scope": "DRIVE train_once and train_loop code branches",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "training_loss_best",
+        "validation_origin": "VAL_PATH aliases TEST_PATH; fit validation generator explicitly reads TMP_TEST",
+        "test_during_training": "monitored_not_checkpoint_criterion",
+        "seed_disclosure": "No complete global seed setting established in reviewed path",
+        "learning_rate_disclosure": "Model optimizer settings; independent tuning unknown",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "train_once saves best training loss while monitoring test data. train_loop also scores TEST_PATH; runtime validity of that branch is unverified. No automatic test-Dice checkpoint maximization established.",
+        "evidence_ids": "E046;E047;E048;E049"
+      },
+      {
+        "repository": "whq-xxh/Serp-Mamba",
+        "commit": "24962199240a928d60229351280f57f6f4c37418",
+        "audited_scope": "README-directed Serp_Mamba/train.py, NOT bundled nnU-Net trainer",
+        "eligible_vessel_training": true,
+        "checkpoint_selection": "validation_metric_best",
+        "validation_origin": "Distinct training_image / val_image / test_image directories; split provenance unknown",
+        "test_during_training": "not_in_checkpoint_condition_in_reviewed_path",
+        "seed_disclosure": "Default1337; Python/NumPy/torch/CUDA seeded",
+        "learning_rate_disclosure": "Base lr=.0001 with polynomial decay",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Bundled nnU-Net KFold implementation is not the README training entry point and is not used to classify this repository.",
+        "evidence_ids": "E050;E051;E052;E053;E054;E055;E056"
+      },
+      {
+        "repository": "FZU312lab/VascLinkNet",
+        "commit": "f1c015e415f699b6916d7311cdd165196c06242b",
+        "audited_scope": "Research-preview placeholder release",
+        "eligible_vessel_training": false,
+        "checkpoint_selection": "not_assessable",
+        "validation_origin": "No complete training/dataset split pipeline in audited preview",
+        "test_during_training": "unknown",
+        "seed_disclosure": "unknown",
+        "learning_rate_disclosure": "unknown",
+        "multi_seed_and_lr_search": "No complete multi-seed/LR-search protocol established from this bounded path; unknown outside reviewed files.",
+        "notes": "Excluded from protocol denominator; placeholder modules explicitly reject execution.",
+        "evidence_ids": "E057;E058"
+      }
+    ],
+    "ports": [
+      {
+        "repository": "KK-ship-it-glitch/Dynamic-Snake-Convolution-Module",
+        "commit": "6ba1c748b1dd625be0aa34f6eba4c75f73ed8804",
+        "path": "DSC",
+        "classification": "specific_cancellation_absent_batched_grid_path",
+        "batch_cancellation_lines": "",
+        "validation": "static_only",
+        "gather_function": "get_interpolated_feature",
+        "function_ast_sha256": "250d847efa7fed2259c1f6f700f95169943d20794ba6546ca418345244685fca",
+        "file_sha256": "ee7100b27d86163c700c17726e681dadd3c1e0e5843d424994bb76c433748351",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E059"
+      },
+      {
+        "repository": "KevinYu17/DSCformer",
+        "commit": "1226fde91248d4eecaf3be9e62ca6d231793c2e0",
+        "path": "DSConv_free.py",
+        "classification": "specific_cancellation_absent_batched_grid_path",
+        "batch_cancellation_lines": "",
+        "validation": "static_only",
+        "gather_function": "get_interpolated_feature",
+        "function_ast_sha256": "8b9d3cab8547e462a2077eb46b932a2d6a2661cde48da17733a53eebc590dbfc",
+        "file_sha256": "73b993a2568a1e5e1f311676506e7da95cb69cfdf7bd76c96e2081adffa17950",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E060"
+      },
+      {
+        "repository": "gikibot/MSure-YOLO",
+        "commit": "f74607675cbe002638424ec2fe2c9e55d21ce482",
+        "path": "custom_modules/S3_DSConv_pro.py",
+        "classification": "specific_cancellation_absent_batched_grid_path",
+        "batch_cancellation_lines": "",
+        "validation": "static_only",
+        "gather_function": "get_interpolated_feature",
+        "function_ast_sha256": "f9c47feebac72110d166bd39480f3ebd98463d4758a763c4f3b7911174f42dff",
+        "file_sha256": "297027c10d92692c3f9b62e7d1e271c73ff008c5ec3e219af46c8e50a9475b5a",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E061"
+      },
+      {
+        "repository": "sudheerpunuriB/tod-yolo",
+        "commit": "4cac0a7e18124ff461548f700be410bd56e451b9",
+        "path": "tod_yolo/modules/dysnake_conv.py",
+        "classification": "specific_cancellation_absent_batched_grid_path",
+        "batch_cancellation_lines": "",
+        "validation": "static_only",
+        "gather_function": "_deform",
+        "function_ast_sha256": "acf0440df52279402199cee5ed1158ea4927843c9dda4070409023a82aa54e78",
+        "file_sha256": "4d7c413b1c702eb9d3e5316d284a2c81381e482ae97fed7f6302e6d53b378c67",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E062"
+      },
+      {
+        "repository": "cuiruize/TopoNet",
+        "commit": "be25da521d5a0fb7dd1a06990c8e1532c6597cb1",
+        "path": "DSCNet/dsconv.py",
+        "classification": "specific_cancellation_absent_batched_grid_path",
+        "batch_cancellation_lines": "",
+        "validation": "static_only",
+        "gather_function": "get_interpolated_feature",
+        "function_ast_sha256": "8b9d3cab8547e462a2077eb46b932a2d6a2661cde48da17733a53eebc590dbfc",
+        "file_sha256": "899b06cbe3f2ba01b261075d8229c5ad905be8236b60bae54bdb668f15977c0b",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E063"
+      },
+      {
+        "repository": "ShellRedia/Snake-SWin-OCTA",
+        "commit": "8dcd7b8c2d1cecae31a2f4637a24302670d23669",
+        "path": "models/DSCNet_2D.py",
+        "classification": "specific_cancellation_absent_batched_grid_path",
+        "batch_cancellation_lines": "",
+        "validation": "static_only",
+        "gather_function": "get_interpolated_feature",
+        "function_ast_sha256": "8b9d3cab8547e462a2077eb46b932a2d6a2661cde48da17733a53eebc590dbfc",
+        "file_sha256": "cb83abf103b9a9937af0f8685222bc1fd2147178c93e8962ff8c63218ea978b5",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E064"
+      },
+      {
+        "repository": "Ath0r/DSC-AMP",
+        "commit": "b8f9043fe793d79b868ac402bbfa421f4b4a957c",
+        "path": "model/StripConv.py",
+        "classification": "specific_cancellation_absent_batched_grid_path",
+        "batch_cancellation_lines": "",
+        "validation": "static_only",
+        "gather_function": "get_interpolated_feature",
+        "function_ast_sha256": "8b9d3cab8547e462a2077eb46b932a2d6a2661cde48da17733a53eebc590dbfc",
+        "file_sha256": "4bfb79b3ef6ca94a6b5121afacbc53ee08d734208f634579e4946a86bdc255f7",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E065"
+      },
+      {
+        "repository": "jryxxx/YOLOv8",
+        "commit": "943f55613cf5aa43fe07f1c5755e61a1d562d00b",
+        "path": "attention/DSConv.py",
+        "classification": "sample_offset_cancellation_confirmed",
+        "batch_cancellation_lines": "326;327;329;330",
+        "validation": "CPU_reproduced_constant_inputs_and_fixed_coordinate_gradient_B1_B4_both_morphs",
+        "gather_function": "_bilinear_interpolate_3D",
+        "function_ast_sha256": "fefbf56eed7d5f31f2272767684ee5cf612f9c1c2c9b5524f4611dcd44ecc038",
+        "file_sha256": "7b26bc7d90b9bee292b89afc257705f8e6736e1f47469c63118517a67316c0c6",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E066"
+      },
+      {
+        "repository": "stevezs315/AttUKAN",
+        "commit": "611a97fbd44b0231dfb47ccd486917280309a6a6",
+        "path": "models/DSConv.py",
+        "classification": "sample_offset_cancellation_confirmed",
+        "batch_cancellation_lines": "293;294;297;298",
+        "validation": "CPU_reproduced_constant_inputs_and_fixed_coordinate_gradient_B1_B4_both_morphs",
+        "gather_function": "_bilinear_interpolate_3D",
+        "function_ast_sha256": "9d136525d4ea5255f323f8da7d9cf6b1975f77dc9f35c515c9b4331390a8d14f",
+        "file_sha256": "141871d6f7c07fc24b43b1528758a164799b31ebc291d2a339199eaee97a413d",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E067"
+      },
+      {
+        "repository": "frank-oy/HREFNet",
+        "commit": "9d096ff869bb174008138b2a27fce9cd43a8ed70",
+        "path": "Code/model/modules/S3_DSConv.py",
+        "classification": "sample_offset_cancellation_confirmed",
+        "batch_cancellation_lines": "288;289;292;293",
+        "validation": "CPU_reproduced_constant_inputs_and_fixed_coordinate_gradient_B1_B4_both_morphs",
+        "gather_function": "_bilinear_interpolate_3D",
+        "function_ast_sha256": "9d136525d4ea5255f323f8da7d9cf6b1975f77dc9f35c515c9b4331390a8d14f",
+        "file_sha256": "8511f5916156a4bbfc6121732af575758557705f83060546838ee7eca5896f4b",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E068"
+      },
+      {
+        "repository": "Chriz122/ultralytics_pro",
+        "commit": "6d2c05a2494071d1be8723e7f6dc20d849a73112",
+        "path": "ultralytics/nn/modules/DySnakeConv.py",
+        "classification": "sample_offset_cancellation_confirmed",
+        "batch_cancellation_lines": "293;294;297;298",
+        "validation": "CPU_reproduced_constant_inputs_and_fixed_coordinate_gradient_B1_B4_both_morphs",
+        "gather_function": "_bilinear_interpolate_3D",
+        "function_ast_sha256": "fefbf56eed7d5f31f2272767684ee5cf612f9c1c2c9b5524f4611dcd44ecc038",
+        "file_sha256": "9f47bd9de2523d41504c4d1e8e793c1b6ad633369e52e87503de95ce401be8ee",
+        "notes": "Repository count is not independent adoption count. Absence of this specific cancellation is not proof of full operator correctness or equivalence to the minimal fix.",
+        "evidence_ids": "E069"
+      }
+    ],
+    "exclusions": [
+      {
+        "repository": "WJX192443/Dynamic-Snake-Convolution-Enhanced-YOLOv8s",
+        "commit": "",
+        "reason": "No verifiable retrieved snapshot: AssertionError: No advertised HEAD commit",
+        "selected_files": 0
+      },
+      {
+        "repository": "sky99smz/DSconv",
+        "commit": "7f29393932612724b5a89c31c28dbe03631365c4",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 1
+      },
+      {
+        "repository": "JarrodLW/DSConv",
+        "commit": "",
+        "reason": "No verifiable retrieved snapshot: AssertionError: No advertised HEAD commit",
+        "selected_files": 0
+      },
+      {
+        "repository": "919449869coder/disease-detection-DSConv",
+        "commit": "f98bd5e5c9f9b3b808332f2573105011659ea95c",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 98
+      },
+      {
+        "repository": "XiaoweiHu102/Optimization-of-YOLOv8-for-Pedestrian-and-Vehicle-Detection-Application-of-DSConv-and-BiFPN",
+        "commit": "53067e3103cdc24d85ea0d50d3166f7273580cfe",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 0
+      },
+      {
+        "repository": "Qunmasj-Vision-Studio/road-2191",
+        "commit": "338b49280a5b3ced7b9331b570312a97a5e13e46",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 1
+      },
+      {
+        "repository": "YOLOv8-YOLOv11-Segmentation-Studio/DEDe137",
+        "commit": "2546c0097fafa4ae26869cbcaef7f8dd6b8185ae",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 1
+      },
+      {
+        "repository": "share2code99/cloud_shadow_detection",
+        "commit": "9ba4ff203b51454c5cb6ed983ebf345509329d7b",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 1
+      },
+      {
+        "repository": "leecool9669/DEDe137",
+        "commit": "2546c0097fafa4ae26869cbcaef7f8dd6b8185ae",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 1
+      },
+      {
+        "repository": "qunaa0101/DEDe137",
+        "commit": "",
+        "reason": "No verifiable retrieved snapshot: AssertionError: No advertised HEAD commit",
+        "selected_files": 0
+      },
+      {
+        "repository": "cyn-jackal/YOLO11-DSConv",
+        "commit": "6339d977293672f873acb9283418c573f11bf1aa",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 67
+      },
+      {
+        "repository": "lyd959/lightweight_yolov8n",
+        "commit": "13d57a5375f5d2f87c31712a01409e3cc83df108",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 57
+      },
+      {
+        "repository": "leeguandong/SGDSCNet-for-HSI",
+        "commit": "12abe88b53c79e4558fbe0043186baaacff2c99d",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 1
+      },
+      {
+        "repository": "CICL-Lab/MorphSeg",
+        "commit": "bcb21016f78a7af5baf54799f05b2eddc146fb2c",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 34
+      },
+      {
+        "repository": "QibiaoWu/TfeNet",
+        "commit": "9b3f2011e6a85400d8c5af81ab8e5b0514ec813b",
+        "reason": "CUDA backend port; wrapper alone insufficient for CPU correctness audit. Excluded from fully assessed Python-port denominator.",
+        "selected_files": 5
+      },
+      {
+        "repository": "Kenton831/nnCoroUNet",
+        "commit": "04984600d3e0b0ad91e93afd092715697d279c15",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 1
+      },
+      {
+        "repository": "coder-syl/ultralytics-yolo11-improve",
+        "commit": "5768f59af00c2c9ea04045ed5ffbb32bcf75f201",
+        "reason": "No assessable matching Dynamic Snake Convolution implementation in selected downloaded sources (may be unrelated DSConv acronym, README-only, or missing matching module). Not evidence of absence across all versions.",
+        "selected_files": 67
+      }
+    ],
+    "sampling": "Adaptive purposive convenience sample; initial candidate PLAN followed by additional public searches/candidate extensions. No representative prevalence or independent adoption inference.",
+    "unknowns": "Unreviewed scripts, supplied data identity, private author execution, model reporting choice after periodic saves, full hyperparameter tuning and seed distributions remain unknown.",
+    "evidence_file": "tables/audit_evidence_codex.csv",
+    "source_registry": "audit/audit_evidence_codex.csv"
+  }
+}

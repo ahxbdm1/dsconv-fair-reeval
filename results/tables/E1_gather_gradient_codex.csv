@@ -1,0 +1,17 @@
+morph,implementation,loss_sample,input_sample,gradient_l2
+0,original,1,0,0.13909971714019775
+0,original,1,1,0.0
+0,original,1,2,0.0
+0,original,1,3,0.0
+0,fixed,1,0,0.0
+0,fixed,1,1,0.14549259841442108
+0,fixed,1,2,0.0
+0,fixed,1,3,0.0
+1,original,1,0,0.14206373691558838
+1,original,1,1,0.0
+1,original,1,2,0.0
+1,original,1,3,0.0
+1,fixed,1,0,0.0
+1,fixed,1,1,0.1388683021068573
+1,fixed,1,2,0.0
+1,fixed,1,3,0.0
