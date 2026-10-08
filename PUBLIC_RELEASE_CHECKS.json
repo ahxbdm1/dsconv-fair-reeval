@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-08",
+  "tested_source_commit": "462ce909231733b3e4bc1fb8cca47256b8ac767f",
+  "fresh_local_clone": true,
+  "environment": {
+    "python": "3.12.5",
+    "torch": "2.8.0+cpu",
+    "numpy": "2.2.6",
+    "scipy": "1.17.1",
+    "device": "CPU"
+  },
+  "baseline_commit": "0e35b2b6ea748a5e8ce7557ea3e580b9951471d6",
+  "data_free_tests": {
+    "test_dsconv_fix.py": "passed",
+    "test_dsconv_shuffle.py": "passed",
+    "test_stats.py": "passed",
+    "test_posthoc_report.py": "passed",
+    "test_power_exact_acceleration.py": "passed",
+    "power_comparison_cases": 32,
+    "complete_power_grid_identical": true,
+    "power_rng_state_identical": true
+  },
+  "statistics": {
+    "recomputed_published_contrasts": 27,
+    "maximum_absolute_difference": 3.47e-18
+  },
+  "audit": {
+    "offline_reconstruction": "passed",
+    "evidence_rows": 75,
+    "immutable_whole_source_sha256_checks_passed_online": 49,
+    "complete_external_sources_included": false,
+    "source_excerpt_columns_included": false
+  },
+  "publication_scan": {
+    "sensitive_pattern_matches": 0,
+    "excluded_file_matches": 0,
+    "non_English_code_comments_or_docstrings": 0,
+    "readme_source_controlled_paths_verified": 23,
+    "csv_tables_readable": 29,
+    "python_sources_parsed": 32,
+    "png_and_pdf_metadata_and_pdf_text_checked": true
+  },
+  "additional_checks": {
+    "training_commands_dry_run": "passed",
+    "standalone_layout_rendering": "passed",
+    "synthetic_e1_rendering": "passed"
+  },
+  "limits": "These are CPU publication checks, not a repeat of GPU training. The data-dependent source-cache test is excluded. Training dependencies are separately pinned; the local CPU check environment differs from the original training environment."
+}
